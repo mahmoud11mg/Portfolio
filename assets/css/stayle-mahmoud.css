@@ -1,7 +1,130 @@
-.aphone{
+
+.a{
     color: #000;
+
 }
-.aphone:hover{
+.a_go:hover{
     color: #000;
     text-decoration: none;
+    box-shadow:0 0 30px rgba(7, 2, 47, 0.149);
+}
+
+.i-icone:hover{
+  
+    -webkit-transform: scale(2.2,2.2) rotate(360deg);
+    -moz-transform: scale(2.2,2.2) rotate(360deg);
+    -o-transform: scale(2.2,2.2) rotate(360deg);
+    -transform: scale(2.2,2.2) rotate(360deg);
+}
+
+.dark {
+	background: #151521;
+	color: rgb(207, 202, 202);
+	   border-color: #000;
+	filter:alpha(opacity=70);
+  
+	animation-fill-mode:both;
+} 
+.sun {
+	background: #711e1e;
+	color: rgb(0, 0, 0);
+
+	filter:alpha(opacity=70);
+    -webkit-transition:all 2.9s ease-in-out;
+    -moz-transition:all 2.9s ease-in-out;
+    -o-transition:all 2.9s  ease-in-out;
+    transition:all 2.9s  ease-in-out;
+	animation-fill-mode:both;
+} 
+
+
+.one-quarter{
+    margin-top:auto;
+}
+.checkbox {
+	opacity: 0;
+	
+}
+
+.label {
+	position: fixed;
+	box-sizing: border-box;
+	background-color: rgba(129, 122, 122, 0.687);
+	border-radius: 50px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px;
+	position: relative;
+	height: 26px;
+	width: 50px;
+    margin: auto;
+    text-align: center;
+
+    -webkit-transition:all 0.9s ease-in-out;
+    -moz-transition:all 0.9s ease-in-out;
+    -o-transition:all 0.9s  ease-in-out;
+    transition:all 0.9s  ease-in-out;
+}
+
+.label .ball {
+	position: fixed;
+	box-sizing: border-box;
+	background-color: #fff;
+	border-radius: 50%;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	height: 22px;
+	width: 22px;
+
+    -webkit-transition:all 0.9s ease-in-out;
+    -moz-transition:all 0.9s ease-in-out;
+    -o-transition:all 0.9s  ease-in-out;
+    transition:all 0.9s  ease-in-out;
+}
+.label .ball:blank {
+	background-color: rgb(0, 0, 0);
+
+}
+.checkbox:checked + .label .ball {
+	transform: translateX(24px);
+}
+
+
+.fa-moon-o {
+        color: #fff;
+}
+
+.fa-sun-o {
+	color: #caff37;
+
+	
+}
+button{
+	float: right;
+	width:200px ;
+	position: fixed;
+
+}
+.ibut{
+	float: left;
+}
+.loading-img:hover{
+	margin-left: 50px;
+	-webkit-transform: scale(2.1,2.1) rotate(360deg);
+    -moz-transform: scale(2.1,2.1) rotate(360deg);
+    -o-transform: scale(2.1,2.1) rotate(360deg);
+    -transform: scale(2.1,2.1) rotate(360deg);
+}
+.img_size{
+   
+    height: 130%;
+}
+.img_size:hover{
+    -webkit-transform: scale(1.3,1.3) rotate(360deg);
+    -moz-transform: scale(1.3,1.3) rotate(360deg);
+    -o-transform: scale(1.3,1.3) rotate(360deg);
+    -transform: scale(1.3,1.3) rotate(360deg);
 }

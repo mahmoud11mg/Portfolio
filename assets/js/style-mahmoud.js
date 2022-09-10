@@ -1,8 +1,4 @@
-
-
-
-
-       /* theme toggle */
+     /* theme toggle */
 	   const themeToggler = document.getElementById("chk")
 
 

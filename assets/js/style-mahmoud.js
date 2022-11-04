@@ -1,4 +1,3 @@
-zz     /* theme toggle */
 	   const themeToggler = document.getElementById("chk")
 
 

@@ -119,6 +119,18 @@ button{
     -transform: scale(2.1,2.1) rotate(360deg);
 }
 .img_size{
-	width: 200%;
+	width: 130%;
        height: 130%;
 	 }
+@media (max-width:768px){
+	.img_size{
+		width: 100%;
+       height: 90%;
+	}
+
+}
+
+hr{
+	width: 100%;
+	height: 100%;
+}

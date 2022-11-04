@@ -122,15 +122,35 @@ button{
 	width: 130%;
        height: 130%;
 	 }
-@media (max-width:768px){
+	@media (max-width:767px)
+ {
 	.img_size{
 		width: 100%;
        height: 90%;
 	}
+}
+@media (min-width:768px) and(max-width:991px)
+ {
+	.img_size{
+		width: 160%;
+		height: 90%;
+	}
 
 }
+@media (min-width:992px) and(max-width:1199px)
+ {
+	.img_size{
+		width: 200%;
+		height: 90%;
+	}
 
-hr{
-	width: 100%;
-	height: 100%;
+}
+@media (min-width:1200px)
+ {
+	.img_size{
+		width: 130%;
+       height: 130%;
+	}
+
+
 }

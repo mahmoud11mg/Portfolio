@@ -4,6 +4,7 @@
   let theme = window.localStorage.getItem("qservTheme") || "light"
   if (theme === "dark") {
     document.body.classList.add("dark")
+   
     themeToggler.setAttribute("checked", "true")
   }
 

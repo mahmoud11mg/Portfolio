@@ -154,3 +154,30 @@ button{
 
 
 }
+.img_size:hover{
+	width: 139%;
+	height: 139%;
+	animation: zoom-in-zoom-out 1s ease infinite;
+	-webkit-animation: zoom-in-zoom-out 1s ease infinite;
+	transform: scale(1.2, 1.1);
+    -webkit-transform: scale(1.2, 1.1);
+    -moz-transform: scale(1.2, 1.1);
+    -ms-transform: scale(1.2, 1.1);
+    -o-transform: scale(1.2, 1.1);
+}
+
+}
+.img_size2:hover{
+	width: 139%;
+	height: 139%;
+	animation: zoom-in-zoom-out 1s ease infinite;
+	-webkit-animation: zoom-in-zoom-out 1s ease infinite;
+
+}
+.img_size3:hover{
+	width: 139%;
+	height: 139%;
+	animation: zoom-in-zoom-out 1s ease infinite;
+	-webkit-animation: zoom-in-zoom-out 1s ease infinite;
+
+}

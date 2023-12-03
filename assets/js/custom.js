@@ -1,0 +1,1 @@
+jQuery(function($){"use strict";$(window).load(function(){$(".page-list-img").mCustomScrollbar({mouseWheel:true,scrollButtons:{enable:true}});});$(function(){var wow=new WOW({boxClass:'wow',animateClass:'animated',offset:0,mobile:false,live:true,scrollContainer:null,});wow.init();});});

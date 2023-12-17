@@ -4588,7 +4588,7 @@
   position: static;
   width: auto;
 }
-@font-face {
+/* @font-face {
   font-family: "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: 400;
@@ -4631,7 +4631,7 @@
     url(../webfonts/fa-solid-900.woff) format("woff"),
     url(../webfonts/fa-solid-900.ttf) format("truetype"),
     url(../webfonts/fa-solid-900.svg#fontawesome) format("svg");
-}
+} */
 .fa,
 .far,
 .fas {

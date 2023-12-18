@@ -273,12 +273,6 @@ select {
   word-wrap: normal;
 }
 
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: button;
-}
 
 button:not(:disabled),
 [type="button"]:not(:disabled),
@@ -334,10 +328,6 @@ progress {
   height: auto;
 }
 
-[type="search"] {
-  outline-offset: -2px;
-  -webkit-appearance: none;
-}
 
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -10974,16 +10964,6 @@ a.text-dark:focus {
   opacity: 0.8;
 }
 
-.mfp-wrap {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1043;
-  position: fixed;
-  outline: none !important;
-  -webkit-backface-visibility: hidden;
-}
 
 .mfp-container {
   text-align: center;
@@ -11095,7 +11075,6 @@ button.mfp-arrow {
   cursor: pointer;
   background: transparent;
   border: 0;
-  -webkit-appearance: none;
   display: block;
   outline: none;
   padding: 0;
@@ -11618,7 +11597,6 @@ header .bg {
 }
 
 .review-box {
-  background-image: url("assets/img/portfolio/wadi El Nile-0.png");
   background-position: left bottom;
   background-repeat: no-repeat;
 }
@@ -11687,6 +11665,7 @@ footer .socials li a {
 }
 
 .hire {
+  width: 14%;
   color: #86e682;
   position: fixed;
   bottom: 40px;
@@ -11700,6 +11679,72 @@ footer .socials li a {
 .hire i {
   margin-left: 10px;
 }
+
+
+@media (min-width:767px)
+{
+  .hire {
+    width: 13%;
+    color: #86e682;
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    z-index: 1000;
+    font-weight: bold;
+    font-size: 17px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+
+}
+@media (min-width:768px) and(max-width:991px)
+{
+  .hire {
+    width: 16%;
+    color: #86e682;
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    z-index: 1000;
+    font-weight: bold;
+    font-size: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+
+}
+
+@media (min-width:992px) and(max-width:1199px)
+{
+  .hire {
+    width: 18%;
+    color: #86e682;
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    z-index: 1000;
+    font-weight: bold;
+    font-size: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+
+}
+
+@media (min-width:1200px)
+{
+  .hire {
+    width: 20%;
+    color: #86e682;
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    z-index: 1000;
+    font-weight: bold;
+    font-size: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+
+
+}
+
 
 .g-recaptcha div {
   margin: auto;

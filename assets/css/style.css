@@ -11550,6 +11550,8 @@ header .bg {
   font-size: 18px;
   font-weight: 400;
   color: #888;
+  position: relative;
+  bottom: -15px;
 }
 
 .skill-bx .rate {

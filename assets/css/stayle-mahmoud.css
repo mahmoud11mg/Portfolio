@@ -141,11 +141,21 @@ button{
     -o-transform: scale(2.1,2.1) rotate(360deg);
     -transform: scale(2.1,2.1) rotate(360deg);
 }
+.dark .shadowimg {
+	box-shadow: 0 12px 16px 0 rgba(255, 255, 255, 0.222), 0 17px 50px 0 rgba(255, 255, 255, 0.382) !important;
+  }
+  .light .shadowimg {
+	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.563), 0 17px 50px 0 rgba(0, 0, 0, 0.563);
+  }
+  /* Close shadow in dark mode if it has the light class */
+  .dark.light.shadowimg {
+	box-shadow: none;
+  }
+
 .img_size{
-	width: 130%;
+	   width: 130%;
        height: 130%;
 	 }
-
 	@media (max-width:767px)
  {
 	.img_size{
@@ -183,29 +193,13 @@ button{
 }
 
 .img_size:hover{
-	width: 139%;
-	height: 139%;
-	animation: zoom-in-zoom-out 1s ease infinite;
-	-webkit-animation: zoom-in-zoom-out 1s ease infinite;
+	animation: zoom-in-zoom-out 5s ease infinite;
+	-webkit-animation: zoom-in-zoom-out 5s ease infinite;
 	transform: scale(1.2, 1.1);
-    -webkit-transform: scale(1.2, 1.1);
-    -moz-transform: scale(1.2, 1.1);
-    -ms-transform: scale(1.2, 1.1);
-    -o-transform: scale(1.2, 1.1);
+	-webkit-transform: scale(1.2, 1.1);
+	-moz-transform: scale(1.2, 1.1);
+	-ms-transform: scale(1.2, 1.1);
+	-o-transform: scale(1.2, 1.1);
 }
 
-.img_size2:hover{
-	width: 139%;
-	height: 139%;
-	animation: zoom-in-zoom-out 1s ease infinite;
-	-webkit-animation: zoom-in-zoom-out 1s ease infinite;
 
-}
-
-.img_size3:hover{
-	width: 139%;
-	height: 139%;
-	animation: zoom-in-zoom-out 1s ease infinite;
-	-webkit-animation: zoom-in-zoom-out 1s ease infinite;
-
-}

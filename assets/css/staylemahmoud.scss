@@ -32,6 +32,17 @@ $Mainbackground:#06223d;
   -ms-border-radius: $r;
   -o-border-radius: $r;
 }
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+  box-shadow: inset 0 0 5px #06223d;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+ background: $Mainbackground;
+}
+
+
 .hire {
   animation: zoom-in-zoom-out 1s ease infinite;
   -webkit-animation: zoom-in-zoom-out 1s ease infinite;
@@ -61,12 +72,25 @@ $Mainbackground:#06223d;
     @extend%transition;
     animation-fill-mode: both;
   }
+  .shadowimg {
+    box-shadow: 0 12px 16px 0 rgba(255, 255, 255, 0.161),  0 17px 50px 0 rgba(255, 255, 255, 0.194) !important;
+ @include boRadius(7px);
+ }
+&::-webkit-scrollbar-thumb {
+  background: $MainColor;
 }
+}
+
 .light {
   filter: alpha(opacity=90) !important;
     @extend%transition;
-  animation-fill-mode: both;
-  -webkit-filter: alpha(opacity=90) !important;
+    animation-fill-mode: both;
+    -webkit-filter: alpha(opacity=90) !important;
+  .shadowimg {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.563),    0 17px 50px 0 rgba(0, 0, 0, 0.563);
+    @include boRadius(8px);
+  }
+ 
 }
 .fa-moon-o {
   color: #fff;
@@ -113,14 +137,7 @@ $Mainbackground:#06223d;
   margin-left: 50px;
   @extend %transformRotate;
 }
-.dark .shadowimg {
-   box-shadow: 0 12px 16px 0 rgba(255, 255, 255, 0.161),  0 17px 50px 0 rgba(255, 255, 255, 0.194) !important;
-@include boRadius(7px);
-}
-.light .shadowimg {
-  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.563),    0 17px 50px 0 rgba(0, 0, 0, 0.563);
-  @include boRadius(8px);
-}
+
 /* Close shadow in dark mode if it has the light class */
 .dark.light.shadowimg {
   box-shadow: none;

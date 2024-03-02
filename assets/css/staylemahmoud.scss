@@ -3,6 +3,9 @@
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
+body{
+  overflow: auto;
+}
 %transform{
   transform: scale(1.2, 1.1);
   -webkit-transform: scale(1.2, 1.1);
@@ -179,11 +182,11 @@ border: 1px solid  !important;
 .img_size {
   width: 130%;
   height: 130%;
-}
-.img_size:hover {
-  animation: zoom-in-zoom-out 5s ease infinite;
-  -webkit-animation: zoom-in-zoom-out 5s ease infinite;
-  @extend %transform;
+  &:hover {
+    animation: zoom-in-zoom-out 5s ease infinite;
+    -webkit-animation: zoom-in-zoom-out 5s ease infinite;
+    @extend %transform;
+  }
 }
 //Certificates
 //Modal
@@ -205,3 +208,9 @@ border: 1px solid  !important;
   @extend %transformRotate;
 }
 //footer Modal
+
+//Loding-oveLay//
+
+
+//Loding-oveLay//
+

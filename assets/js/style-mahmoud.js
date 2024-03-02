@@ -1,5 +1,4 @@
-	   const themeToggler = document.getElementById("chk")
-
+const themeToggler = document.getElementById("chk")
 
   let theme = window.localStorage.getItem("qservTheme") || "light"
   if (theme === "dark") {
@@ -18,4 +17,8 @@
     document.body.classList.toggle("dark")
   });
 
+
+
+//Loding
+ 
 

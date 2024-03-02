@@ -1109,7 +1109,9 @@ a.close.disabled {
   transition: transform 0.3s ease-out;
   transform: translate(0, -50px);
 }
-
+.modal-dialog{
+  margin: auto;
+}
 
 .modal.show .modal-dialog {
   transform: none;
@@ -3186,7 +3188,7 @@ footer .socials li a {
   max-width: 900px;
   margin: auto;
   text-align: center;
-  background-color: #fff;
+  background-color:$mainbackgroundcolor;
   position: relative;
   top: 50px;
 }
@@ -3198,7 +3200,7 @@ footer .socials li a {
 }
 
 .popup {
-  max-width: 400px;
+
   display: block;
 }
 

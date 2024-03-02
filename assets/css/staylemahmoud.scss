@@ -32,6 +32,14 @@ $Mainbackground:#06223d;
   -ms-border-radius: $r;
   -o-border-radius: $r;
 }
+.lazy{
+  width: 17%;
+  height: 17%;
+  @include boRadius(50px);
+  margin-right: 15px;
+
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 15px;
@@ -45,6 +53,7 @@ $Mainbackground:#06223d;
  
     background: $Mainbackground;
    }
+   
    
 .btn-info{
   color: $MainColor !important;

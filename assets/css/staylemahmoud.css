@@ -27,6 +27,17 @@
   transition: all 0.9s ease-in-out;
 }
 
+.lazy {
+  width: 17%;
+  height: 17%;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  margin-right: 15px;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 15px;

@@ -1,0 +1,425 @@
+$mainColortext: rgba(9, 36, 62, 0.773);
+$mainColor: #86e682;
+$mainbackgroundcolor: #09243f;
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+
+    .container-sm {
+      max-width: 540px;
+    }
+  };
+
+  .me {
+    text-align: center;
+    width: 90%;
+
+    .about {
+      width: 80%;
+    }
+
+    .my-img {
+      width: 30%;
+      margin-top: -100px;
+    }
+  };
+
+  .testimonials{
+    width: 100%;
+
+    h2 {
+      margin-bottom: 0;
+    }
+  
+    .lead {
+      margin-bottom: 15px;
+    }
+  };
+ 
+  .resize{
+    margin-left: 100px;
+  };
+  .Testimo{
+    margin-right: -100px;
+
+  };
+
+  .skill-bx {
+    margin-bottom: 20px;
+        h3{
+          font-size: 25px !important;
+      }
+
+    .rate {
+      font-size: 43px;
+    }
+  }
+  }
+
+
+// Smart Phone And Tablets
+@media (max-width: 767px) {
+  
+  .testimonials{
+    width: 100%;
+
+    h2 {
+      margin-bottom: 0;
+    }
+  
+    .lead {
+      margin-bottom: 15px;
+    }
+  };
+ 
+  .resize{
+    margin-left: 100px;
+  };
+  .Testimo{
+    margin-right: -100px;
+
+  };
+  .my-img {
+    width: 35%;
+    height: 35%;
+  };
+
+  .container {
+    max-width: 720px;
+
+    .container-sm,
+    .container-md {
+      max-width: 720px;
+    }
+  };
+
+  .img_size {
+    width: 100%;
+    
+    height: 90%;
+  };
+
+  header {
+    padding: 150px 0 50px 0;
+  };
+
+  .mfp-container {
+    padding-left: 6px;
+    padding-right: 6px;
+  };
+
+  .btn-group {
+    flex-wrap: wrap;
+  };
+
+  .col-sm-6 {
+    width: 50%;
+    padding: 0 5px;
+  };
+
+  .popup {
+    max-width: 100%;
+
+    h2 {
+      font-size: 30px;
+    }
+  };
+
+  .hire {
+    width: 13%;
+    color: #86e682;
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    z-index: 1000;
+    font-weight: bold;
+    font-size: 17px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  };
+
+  .me {
+    text-align: center;
+    width: 50%;
+
+    .about {
+      width: 50%;
+    }
+
+    .my-img {
+      width: 30%;
+      margin-top: -100px;
+    }
+  };
+
+  .skill-bx {
+    margin-bottom: 20px;
+    h3{
+      font-size: 20px !important;
+    }
+
+    .rate {
+      font-size: 43px;
+    }
+  };
+}
+
+// Small Screen
+@media (min-width: 768px) and (max-width: 991px) {
+  
+  .testimonials{
+    width: 100%;
+
+    h2 {
+      margin-bottom: 0;
+    }
+  
+    .lead {
+      margin-bottom: 15px;
+    }
+  }
+ 
+  .resize{
+    margin-left: 68px;
+  }
+  .Testimo{
+    margin-right: -39px;
+
+  }
+  .hire {
+    width: 16%;
+    font-size: 20px;
+  }
+
+  .me {
+    text-align: center;
+    width: 50%;
+
+    .about {
+      width: 50%;
+    }
+
+    .my-img {
+      width: 50%;
+    }
+  }
+
+  .skill-bx {
+    margin-bottom: 20px;
+        h3{
+          font-size: 15px !important;
+      }
+
+    .rate {
+      font-size: 43px;
+    }
+  }
+}
+
+// Medium Screen
+@media (min-width: 992px) and (max-width: 1199px) {
+  
+  .testimonials{
+    width: 100%;
+
+    h2 {
+      margin-bottom: 0;
+    }
+  
+    .lead {
+      margin-bottom: 15px;
+    }
+  }
+ 
+  .resize{
+    margin-left: 100px;
+  }
+  .Testimo{
+    margin-right: -100px;
+
+  }
+  .my-img {
+    width: 20%;
+  }
+
+  .container {
+    max-width: 960px;
+
+    .container-sm,
+    .container-md,
+    .container-lg {
+      max-width: 960px;
+    }
+  }
+
+  .hire {
+    width: 18%;
+    font-size: 20px;
+  }
+
+  header {
+    padding: 200px 0;
+  }
+
+  section {
+    padding: 50px 0;
+
+    h2 {
+      font-size: 35px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .navbar {
+    z-index: 1000;
+
+    .navbar-brand {
+      max-width: 190px;
+    }
+  }
+
+  h3,
+  .h3 {
+    font-size: 1.2rem;
+  }
+
+  .me {
+    text-align: center;
+    width: 50%;
+
+    .about {
+      width: 90%;
+        }
+
+    .my-img {
+      width: 50%;
+    }
+  }
+  .skill-bx {
+    margin-bottom: 20px;
+        h3{
+          font-size: 20px !important;
+      }
+
+    .rate {
+      font-size: 43px;
+    }
+  }
+
+  .col {
+    flex-basis: auto;
+    width: 30%;
+  }
+
+  .img_size {
+    width: 200%;
+    height: 90%;
+  }
+
+  .modal-lg,
+  .modal-xl {
+    max-width: 800px;
+  }
+}
+
+// Large Screen
+@media (min-width: 1200px) {
+  .testimonials{
+    width: 100%;
+
+    h2 {
+      margin-bottom: 0;
+    }
+  
+    .lead {
+      margin-bottom: 15px;
+    }
+  }
+  .resize{
+    margin-left: 100px;
+  }
+  .Testimo{
+    margin-right: -100px;
+
+  }
+  .container {
+    max-width: 1140px;
+
+    .container-sm,
+    .container-md,
+    .container-lg,
+    .container-xl {
+      max-width: 1140px;
+    }
+  }
+
+  .img_size {
+    width: 130%;
+    height: 130%;
+  }
+
+  .hire {
+    width: 20%;
+    font-size: 20px;
+  }
+
+  .me {
+    text-align: center;
+    width: 50%;
+
+    .about {
+      width: 90%;
+    }
+
+    .my-img {
+      width: 50%;
+    }
+  }
+}
+
+// Print
+@media print {
+  *,
+  *::before,
+  *::after {
+    text-shadow: none !important;
+    box-shadow: none !important;
+  }
+
+  a:not(.btn) {
+    text-decoration: underline;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+
+  @page {
+    size: a3;
+  }
+
+  body {
+    min-width: 992px !important;
+  }
+
+  .container {
+    min-width: 992px !important;
+  }
+
+  .navbar {
+    display: none;
+  }
+}

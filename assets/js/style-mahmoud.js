@@ -16,9 +16,3 @@ const themeToggler = document.getElementById("chk")
     }
     document.body.classList.toggle("dark")
   });
-
-
-
-//Loding
- 
-

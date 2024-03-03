@@ -6,8 +6,8 @@
 body{
   overflow: auto;
 }
-$MainColor:#86e682;
-$Mainbackground:#06223d;
+$mainColor:#55c550;
+$mainbackground:#06223d;
 %transform{
   transition:all 1.1s; 
   transform: scale(1.2, 1.1);
@@ -52,22 +52,22 @@ $Mainbackground:#06223d;
 }
 /* Handle */
 ::-webkit-scrollbar-thumb,.swiper-scrollbar-drag {
- background-color: $Mainbackground;
+ background-color: $mainbackground;
 }
 
 //Nav 
-.CV  {  color: $MainColor;}
+.CV  {  color: $mainColor;}
 .one-quarter {  margin-top: auto;}
 .checkbox {  opacity: 0;}
 .dark {
-  color: $MainColor!important;
+  color: $mainColor!important;
   background: #041527;
   filter: alpha(opacity=70);
   @extend%transition;
   animation-fill-mode: both;
   
   h2 {
-    color: $MainColor!important;
+    color: $mainColor!important;
     filter: alpha(opacity=70);
     @extend%transition;
     animation-fill-mode: both;
@@ -77,15 +77,49 @@ $Mainbackground:#06223d;
  @include boRadius(7px);
  }
 &::-webkit-scrollbar-thumb {
-  background: $MainColor;
+  background: $mainColor;
 }
 .swiper-scrollbar-drag {
  
-  background: $MainColor;
+  background: $mainColor;
  }
  .skill-bx h3 {
-  color: $MainColor;
+  color: $mainColor;
  }
+ .progress {  background-color: $mainColor; 
+}
+
+.btn-info {
+
+  &:hover {
+  
+    border-color: $mainColor !important;
+    transition:all 1.1s; 
+  }
+&:not(:disabled):not(.disabled):active,
+&:not(:disabled):not(.disabled).active,
+.show > .btn-info.dropdown-toggle {
+  color: white !important;
+background: $mainColor!important;
+border-color: $mainColor !important;
+border: none;
+transition:all 1.1s; 
+}
+
+}
+
+.hvr-sweep-to-right {
+  &:before {
+    background: $mainColor!important;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: white !important;
+  }
+}
+
 
 }
 
@@ -122,7 +156,7 @@ $Mainbackground:#06223d;
     .ball {
     position: fixed;
     box-sizing: border-box;
-    background-color: #86e682;
+    background-color: $mainColor;
     border-radius: 50%;
     position: absolute;
     top: 2px;
@@ -148,7 +182,7 @@ $Mainbackground:#06223d;
   &:hover {
     animation: zoom-in-zoom-out 5s ease infinite;
     -webkit-animation: zoom-in-zoom-out 5s ease infinite;
-    @extend %transform;
+      @extend %transformRotate;
   }
 }
 //Certificates
@@ -157,19 +191,34 @@ $Mainbackground:#06223d;
   margin-bottom: 25px;
 }
 .a_go {
-  color: $MainColor;
+  color: $mainColor;
   text-decoration: none;
 
    &:hover{
     box-shadow: 0px 0px 30px rgba(133, 230, 130, 0.282);
-    color: $MainColor;
+    color: $mainColor;
     text-decoration: none;
     border: none;
     transition:all 1.1s; 
   }
 }
 //Modal
-//footer Modal
+.copyright{
+  font-size: 20px;
 
-//footer Modal
+  span{
+    color: beige;
+  }
+}
 
+
+
+
+.hvr-underline-from-right:before{
+  background: $mainColor !important;
+
+ &:active{
+    color: $mainColor;
+  }
+
+}

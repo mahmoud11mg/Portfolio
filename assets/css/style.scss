@@ -244,16 +244,17 @@ progress {  vertical-align: baseline;}
     background-color: $mainbackground;
     border-color: #fff !important;
     box-shadow: 0 0 0 0.1rem $mainshadow;
-    filter:alpha(opacity=70);
-    transition:all 1.1s; 
+    filter:alpha(opacity=1);
+    transition:all 1.1s;
     animation-fill-mode:both;
-  }
+    -webkit-filter:alpha(opacity=1);
+}
   &:not(:disabled):not(.disabled):active,
   &:not(:disabled):not(.disabled).active,
   .show > .btn-info.dropdown-toggle {
   color: #fff;
-  background-color: $mainColor;
-  border-color: #ffffff !important;
+  background-color: $mainbackground;
+  border-color: $mainColor !important;
   border: none;
   transition:all 1.1s; 
 }

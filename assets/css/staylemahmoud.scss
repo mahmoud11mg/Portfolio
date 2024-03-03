@@ -99,7 +99,7 @@ $mainbackground:#06223d;
 &:not(:disabled):not(.disabled):active,
 &:not(:disabled):not(.disabled).active,
 .show > .btn-info.dropdown-toggle {
-  color: white !important;
+  color: $mainbackground!important;
 background: $mainColor!important;
 border-color: $mainColor !important;
 border: none;
@@ -112,11 +112,11 @@ transition:all 1.1s;
   &:before {
     background: $mainColor!important;
   }
-
+  &:active,
   &:hover,
-  &:focus,
-  &:active {
-    color: white !important;
+  &:focus
+  {
+    color: $mainbackground!important;
   }
 }
 

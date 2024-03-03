@@ -103,7 +103,7 @@ body {
 
 .dark .btn-info:not(:disabled):not(.disabled):active, .dark .btn-info:not(:disabled):not(.disabled).active,
 .dark .btn-info .show > .btn-info.dropdown-toggle {
-  color: white !important;
+  color: #06223d !important;
   background: #55c550 !important;
   border-color: #55c550 !important;
   border: none;
@@ -114,8 +114,8 @@ body {
   background: #55c550 !important;
 }
 
-.dark .hvr-sweep-to-right:hover, .dark .hvr-sweep-to-right:focus, .dark .hvr-sweep-to-right:active {
-  color: white !important;
+.dark .hvr-sweep-to-right:active, .dark .hvr-sweep-to-right:hover, .dark .hvr-sweep-to-right:focus {
+  color: #06223d !important;
 }
 
 .light {

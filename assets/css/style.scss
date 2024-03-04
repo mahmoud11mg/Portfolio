@@ -492,7 +492,6 @@ button.bg-success:hover,button.bg-success:focus {  background-color: #1e7e34 !im
   text-align: center;
   position: absolute;
   width: 100%;
-  height: 100%;
   left: 0;
   top: 0;
   padding: 0 8px;
@@ -754,9 +753,7 @@ footer {
     margin: auto;
     margin-bottom: 50px;
     box-shadow: 0 0 30px$mainshadow;
-    .no-shadow {
-      box-shadow: none;
-    }
+    .no-shadow { box-shadow: none;}
   }
 
     

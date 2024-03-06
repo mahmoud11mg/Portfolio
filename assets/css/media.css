@@ -45,7 +45,6 @@
     font-size: 43px;
   }
 }
-
 @media (max-width: 767px) {
   .testimonials {
     width: 100%;
@@ -141,7 +140,6 @@
     top: 50px;
   }
 }
-
 @media (min-width: 768px) and (max-width: 991px) {
   .testimonials {
     width: 100%;
@@ -194,7 +192,6 @@
     top: 50px;
   }
 }
-
 @media (min-width: 992px) and (max-width: 1199px) {
   .testimonials {
     width: 100%;
@@ -290,7 +287,6 @@
     top: 50px;
   }
 }
-
 @media (min-width: 1200px) {
   .testimonials {
     width: 100%;
@@ -335,7 +331,6 @@
     width: 50%;
   }
 }
-
 @media print {
   *,
   *::before,
@@ -372,4 +367,4 @@
   .navbar {
     display: none;
   }
-}
+}/*# sourceMappingURL=media.css.map */

@@ -1,11 +1,25 @@
-$mainColortext: rgba(9, 36, 62, 0.773);
-$mainColor: #86e682;
-$mainbackground: #09243f;
+@import "styleimpo";
 
-@media (min-width: 576px) {
+@media (min-width: 500px) and (max-width: 767px) {
+  //nav
+  .navbar {
+    height: 15% !important;
+  }
+  .navbar-nav {
+    margin-top: -10px;
+  }
+  .navbar-expand-lg > .container-fluid {
+    background-color: $mainbackground !important;
+  }
+  .is-sticky .navbar {
+    background-color: $mainbackground !important;
+    z-index: 9999 !important;
+  }
+  //End nav
+
   .img_size {
-    width: 90%;
-    height: 90%;
+    width: 80% !important;
+    height: 80% !important;
     margin: auto;
     display: block;
   }
@@ -16,85 +30,97 @@ $mainbackground: #09243f;
       max-width: 540px;
     }
   }
-  
+
   .me {
     text-align: center;
     width: 90%;
 
     .about {
-      width: 80%;
+      width: 50%;
+      position: relative;
+      left: -150px !important;
+      bottom: -190px !important;
+
+      p {
+        font-size: 20px;
+      }
     }
 
     .my-img {
       width: 30%;
-      margin-top: -100px;
+      margin-top: -53%;
+      position: relative;
+      left: 25%;
+      top: 50px;
     }
-  };
+  }
 
-  .testimonials{
+  .testimonials {
     width: 100%;
 
     h2 {
       margin-bottom: 0;
     }
-  
+
     .lead {
       margin-bottom: 15px;
     }
-  };
- 
-  .resize{
-    margin-left: 100px;
-  };
-  .Testimo{
-    margin-right: -100px;
+  }
 
-  };
+  .resize {
+    margin-left: 100px;
+  }
+  .Testimo {
+    margin-right: -100px;
+  }
 
   .skill-bx {
     margin-bottom: 20px;
-        h3{
-          font-size: 25px !important;
-      }
+    h3 {
+      font-size: 25px !important;
+    }
 
     .rate {
       font-size: 43px;
     }
   }
-
-
-  }
-
+}
 
 // Smart Phone And Tablets
-@media (max-width: 767px) {
-  .navbar-expand-lg > .container-fluid{
-    background-color: $mainbackground;
+@media (min-width: 768px) {
+  //nav
+  .navbar {
+    height: 15% !important;
   }
-
-  .testimonials{
+  .navbar-nav {
+    margin-top: -10px;
+  }
+  .navbar-expand-lg > .container-fluid {
+    background-color: $mainbackground !important;
+  }
+  .is-sticky .navbar {
+    background-color: $mainbackground !important;
+    z-index: 9999 !important;
+  }
+  //End nav
+  .testimonials {
     width: 100%;
 
     h2 {
       margin-bottom: 0;
     }
-  
+
     .lead {
       margin-bottom: 15px;
     }
-  };
- 
-  .resize{
-    margin-left: 100px;
-  };
-  .Testimo{
-    margin-right: -100px;
+  }
 
-  };
-  .my-img {
-    width: 35%;
-    height: 35%;
-  };
+  .resize {
+    margin-left: 100px;
+  }
+  .Testimo {
+    margin-right: -100px;
+  }
 
   .container {
     max-width: 720px;
@@ -103,33 +129,33 @@ $mainbackground: #09243f;
     .container-md {
       max-width: 720px;
     }
-  };
+  }
 
   .img_size {
-    width: 80% !important;
-    
-    height: 90% !important;
+    width: 100% !important;
+
+    height: 100% !important;
     margin: auto;
     display: block;
-  };
+  }
 
   header {
     padding: 150px 0 50px 0;
-  };
+  }
 
   .mfp-container {
     padding-left: 6px;
     padding-right: 6px;
-  };
+  }
 
   .btn-group {
     flex-wrap: wrap;
-  };
+  }
 
   .col-sm-6 {
     width: 50%;
     padding: 0 5px;
-  };
+  }
 
   .popup {
     max-width: 100%;
@@ -137,7 +163,7 @@ $mainbackground: #09243f;
     h2 {
       font-size: 30px;
     }
-  };
+  }
 
   .hire {
     width: 13%;
@@ -149,7 +175,7 @@ $mainbackground: #09243f;
     font-weight: bold;
     font-size: 17px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  };
+  }
 
   .me {
     text-align: center;
@@ -160,60 +186,69 @@ $mainbackground: #09243f;
     }
 
     .my-img {
-      width: 30%;
-      margin-top: -100px;
+      width: 35%;
+      height: 35%;
+      position: relative;
+      left: 20px;
     }
-  };
+  }
 
   .skill-bx {
     margin-bottom: 20px;
-    h3{
+    h3 {
       font-size: 20px !important;
     }
 
     .rate {
       font-size: 43px;
     }
-  };
+  }
   footer {
     .left {
-           bottom: -34px;}
+      bottom: -34px;
+    }
 
     .socials .i_icone {
       color: #fff;
-      margin-right:5px;
+      margin-right: 5px;
       font-size: 25px;
-     }
-     .copyright{
+    }
+    .copyright {
       position: relative;
-      top: 50px;
+      top: 50px !important;
     }
   }
-  }
+}
 
 // Small Screen
 @media (min-width: 768px) and (max-width: 991px) {
-  .navbar-expand-lg > .container-fluid{
-    background-color: $mainbackground;
+  //nav
+
+  .navbar-expand-lg > .container-fluid {
+    background-color: $mainbackground !important;
   }
-  .testimonials{
+  .is-sticky .navbar {
+    background-color: $mainbackground !important;
+    z-index: 9999 !important;
+  }
+  //End nav
+  .testimonials {
     width: 100%;
 
     h2 {
       margin-bottom: 0;
     }
-  
+
     .lead {
       margin-bottom: 15px;
     }
   }
- 
-  .resize{
+
+  .resize {
     margin-left: 68px;
   }
-  .Testimo{
+  .Testimo {
     margin-right: -39px;
-
   }
   .hire {
     width: 16%;
@@ -230,63 +265,73 @@ $mainbackground: #09243f;
 
     .my-img {
       width: 50%;
+      position: relative;
+      left: 10px;
     }
   }
 
   .skill-bx {
     margin-bottom: 20px;
-        h3{
-          font-size: 15px !important;
-      }
+    h3 {
+      font-size: 15px !important;
+    }
 
     .rate {
       font-size: 43px;
     }
   }
+  .grid-item {
+    width: 30%;
+  }
 
-      footer {
-      .left {
-             bottom: -34px;}
-
-      .socials .i_icone {
-        color: #fff;
-        margin-right:5px;
-        font-size: 25px;
-       }
-       .copyright{
-        position: relative;
-        top: 50px;
-      }
+  footer {
+    .left {
+      bottom: -34px;
     }
-   
+
+    .socials .i_icone {
+      color: #fff;
+      margin-right: 5px;
+      font-size: 25px;
+    }
+    .copyright {
+      position: relative;
+      top: 50px !important;
+    }
+  }
 }
 
 // Medium Screen
 @media (min-width: 992px) and (max-width: 1199px) {
-  .navbar-expand-lg > .container-fluid{
-    background-color: $mainbackground;
+  .navbar-expand-lg > .container-fluid {
+    background-color: $mainbackground !important;
   }
-  .testimonials{
+  .is-sticky .navbar {
+    background-color: $mainbackground !important;
+    z-index: 9999 !important;
+  }
+  .testimonials {
     width: 100%;
 
     h2 {
       margin-bottom: 0;
     }
-  
+
     .lead {
       margin-bottom: 15px;
     }
   }
- 
-  .resize{
+
+  .resize {
     margin-left: 100px;
   }
-  .Testimo{
+  .Testimo {
     margin-right: -100px;
-
   }
   .my-img {
     width: 20%;
+    position: relative;
+    left: 15px;
   }
 
   .container {
@@ -336,7 +381,7 @@ $mainbackground: #09243f;
 
     .about {
       width: 90%;
-        }
+    }
 
     .my-img {
       width: 50%;
@@ -344,9 +389,9 @@ $mainbackground: #09243f;
   }
   .skill-bx {
     margin-bottom: 20px;
-        h3{
-          font-size: 20px !important;
-      }
+    h3 {
+      font-size: 20px !important;
+    }
 
     .rate {
       font-size: 43px;
@@ -359,8 +404,8 @@ $mainbackground: #09243f;
   }
 
   .img_size {
-    width: 200%;
-    height: 90%;
+    width: 200% !important;
+    height: 90% !important;
     margin: auto;
     display: block;
   }
@@ -371,39 +416,39 @@ $mainbackground: #09243f;
   }
   footer {
     .left {
-           bottom: -34px;}
+      bottom: -34px;
+    }
 
     .socials .i_icone {
       color: #fff;
-      margin-right:5px;
+      margin-right: 5px;
       font-size: 25px;
-     }
-     .copyright{
+    }
+    .copyright {
       position: relative;
-      top: 50px;
+      top: 50px !important;
     }
   }
 }
 
 // Large Screen
 @media (min-width: 1200px) {
-  .testimonials{
+  .testimonials {
     width: 100%;
 
     h2 {
       margin-bottom: 0;
     }
-  
+
     .lead {
       margin-bottom: 15px;
     }
   }
-  .resize{
+  .resize {
     margin-left: 100px;
   }
-  .Testimo{
+  .Testimo {
     margin-right: -100px;
-
   }
   .container {
     max-width: 1140px;
@@ -417,8 +462,8 @@ $mainbackground: #09243f;
   }
 
   .img_size {
-    width: 130%;
-    height: 130%;
+    width: 110% !important;
+    height: 110% !important;
     margin: auto;
     display: block;
   }

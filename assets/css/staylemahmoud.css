@@ -1,13 +1,3 @@
-* {
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-}
-
-body {
-  overflow: auto;
-}
-
 .img_size:hover, .loading-img:hover {
   transition: all 1.1s;
   transform: scale(1.2, 1.1);
@@ -19,6 +9,49 @@ body {
 
 .label .ball, .label, .light, .dark h2, .dark {
   transition: all 0.9s ease-in-out;
+}
+
+:root {
+  --blue: $mainbackground;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #09243f;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #09243f;
+  --primary: $mainbackground;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #09243f;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --dark: $mainbackground;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+}
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  overflow: auto;
 }
 
 .lazy {
@@ -35,16 +68,17 @@ body {
 /* width */
 ::-webkit-scrollbar {
   width: 15px;
-  box-shadow: inset 0 0 5px #06223d;
+  box-shadow: inset 0 0 5px #06223d !important;
 }
 
 /* Handle */
-::-webkit-scrollbar-thumb, .swiper-scrollbar-drag {
-  background-color: #06223d;
+::-webkit-scrollbar-thumb,
+.swiper-scrollbar-drag {
+  background-color: #06223d !important;
 }
 
 .CV {
-  color: #55c550;
+  color: #55c550 !important;
 }
 
 .one-quarter {
@@ -57,7 +91,7 @@ body {
 
 .dark {
   color: #55c550 !important;
-  background: #041527;
+  background: #030e1a;
   filter: alpha(opacity=70);
   animation-fill-mode: both;
 }
@@ -75,28 +109,31 @@ body {
   -o-border-radius: 7px;
 }
 .dark::-webkit-scrollbar-thumb {
-  background: #55c550;
+  background: #55c550 !important;
 }
 .dark .swiper-scrollbar-drag {
-  background: #55c550;
+  background: #55c550 !important;
 }
 .dark .skill-bx h3 {
-  color: #55c550;
+  color: #55c550 !important;
 }
 .dark .progress {
-  background-color: #55c550;
+  background-color: #55c550 !important;
 }
 .dark .btn-info:hover {
-  border-color: #55c550 !important;
+  border-color: #55c550;
   transition: all 1.1s;
 }
 .dark .btn-info:not(:disabled):not(.disabled):active, .dark .btn-info:not(:disabled):not(.disabled).active,
 .dark .btn-info .show > .btn-info.dropdown-toggle {
-  color: #06223d !important;
-  background: #55c550 !important;
-  border-color: #55c550 !important;
+  color: #06223d;
+  background: #55c550;
+  border-color: #55c550;
   border: none;
   transition: all 1.1s;
+}
+.dark .grid .grid-item a img {
+  border: 3px solid #55c550 !important;
 }
 .dark .hvr-sweep-to-right:before {
   background: #55c550 !important;
@@ -146,7 +183,7 @@ body {
 .label .ball {
   position: fixed;
   box-sizing: border-box;
-  background-color: #55c550;
+  background-color: #55c550 !important;
   border-radius: 50%;
   position: absolute;
   top: 2px;
@@ -172,8 +209,10 @@ body {
 }
 
 .img_size {
-  width: 130%;
-  height: 130%;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  display: block;
 }
 .img_size:hover {
   animation: zoom-in-zoom-out 5s ease infinite;
@@ -185,12 +224,12 @@ body {
 }
 
 .a_go {
-  color: #55c550;
+  color: #55c550 !important;
   text-decoration: none;
 }
 .a_go:hover {
   box-shadow: 0px 0px 30px rgba(133, 230, 130, 0.282);
-  color: #55c550;
+  color: #55c550 !important;
   text-decoration: none;
   border: none;
   transition: all 1.1s;
@@ -207,7 +246,7 @@ body {
   background: #55c550 !important;
 }
 .hvr-underline-from-right:before:active {
-  color: #55c550;
+  color: #55c550 !important;
 }
 
 .img-modal {
@@ -216,4 +255,17 @@ body {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+}
+
+.logo-me {
+  width: 100px !important;
+  height: 80px !important;
+  margin-top: 3px !important;
+}
+
+.hvr-sweep-to-right:before {
+  background: #55c550 !important;
+}
+.hvr-sweep-to-right:active, .hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus {
+  color: #06223d !important;
 }/*# sourceMappingURL=staylemahmoud.css.map */

@@ -499,7 +499,7 @@ a.close.disabled {
   border: none;
   width: 5%;
   position: relative;
-  top: 73px;
+  top: 90px;
 }
 .modal-header .close:hover {
   color: #09ff00;
@@ -511,7 +511,7 @@ a.close.disabled {
   color: #55c550 !important;
   border: none;
   position: relative !important;
-  top: -13px !important;
+  top: 20px !important;
 }
 
 .modal-body {

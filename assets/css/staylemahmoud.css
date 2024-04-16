@@ -258,7 +258,7 @@ body {
 }
 
 .logo-me {
-  box-shadow: 0 12px 16px 0 rgba(86, 197, 80, 0.0980392157), 0 17px 50px 0 rgba(86, 197, 80, 0.0980392157);
+  box-shadow: 0 12px 16px 0 rgba(86, 197, 80, 0.0980392157), 0 17px 50px 0 rgba(86, 197, 80, 0.0980392157) !important;
   margin-top: 3px !important;
 }
 

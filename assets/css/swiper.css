@@ -460,4 +460,5 @@ button.swiper-pagination-bullet {
 .swiper-container-flip .swiper-slide-shadow-top {
   z-index: 0;
   backface-visibility: hidden;
-}/*# sourceMappingURL=swiper.css.map */
+}/*# sourceMappingURL=swiper.css.map */-visibility: hidden;
+}

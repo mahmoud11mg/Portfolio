@@ -7,7 +7,7 @@
   -o-transform: scale(1.2, 1.1);
 }
 
-.label .ball, .label, .light, .dark h2, .dark {
+.label .ball, .label, .light, .light .skills, .dark h2, .dark .skills, .dark {
   transition: all 0.9s ease-in-out;
 }
 

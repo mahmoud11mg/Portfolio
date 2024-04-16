@@ -258,6 +258,11 @@ body {
 }
 
 .logo-me {
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
   box-shadow: 0 12px 16px 0 rgba(86, 197, 80, 0.0980392157), 0 17px 50px 0 rgba(86, 197, 80, 0.0980392157) !important;
   margin-top: 3px !important;
 }

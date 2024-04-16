@@ -104,7 +104,7 @@
 }
 @media (min-width: 768px) {
   .navbar {
-    height: 15% !important;
+    height: 8% !important;
   }
   .navbar-nav {
     margin-top: -10px;

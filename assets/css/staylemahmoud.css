@@ -95,6 +95,11 @@ body {
   filter: alpha(opacity=70);
   animation-fill-mode: both;
 }
+.dark .skills {
+  background-image: url("/assets/img/Skills/backDar.jpg") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .dark h2 {
   color: #55c550 !important;
   filter: alpha(opacity=70);
@@ -146,6 +151,11 @@ body {
   filter: alpha(opacity=90) !important;
   animation-fill-mode: both;
   -webkit-filter: alpha(opacity=90) !important;
+}
+.light .skills {
+  background-image: url("/assets/img/Skills/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .light .shadowimg {
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.563), 0 17px 50px 0 rgba(0, 0, 0, 0.563);
@@ -272,4 +282,13 @@ body {
 }
 .hvr-sweep-to-right:active, .hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus {
   color: #06223d !important;
+}
+
+.h3Skills {
+  display: inline-block;
+}
+
+.imgSkills {
+  display: block;
+  margin: auto;
 }/*# sourceMappingURL=staylemahmoud.css.map */

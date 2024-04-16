@@ -44,7 +44,7 @@ body {
 
   .skills {
     @extend%transition;
-    background-image: url("../img/Skills/backDar.jpg") !important;
+    background-image: url("./img/Skills/backDar.jpg") !important;
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -107,7 +107,7 @@ body {
 .light {
   .skills {
     @extend%transition;
-    background-image: url("../img/Skills/background.jpg");
+    background-image: url("./img/Skills/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }

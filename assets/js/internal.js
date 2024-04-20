@@ -1,18 +1,7 @@
 'use strict';
 jQuery(document).ready(function () {    
     
-    $('.ajax-popup-link').magnificPopup({
-        fixedContentPos : true,
-      type: 'ajax',
-      tLoading: 'Loading Content #%curr%...',
-    });
-    /*
-    $('#close').click(function(){
-        $('.mfp-close').trigger('click');
-    });
-*/
-    
-    //lazy load for images
+  //lazy load for images
     var myLazyLoad = new LazyLoad();
     
     // sticky
@@ -66,18 +55,5 @@ jQuery(document).ready(function () {
       $grid.isotope({ filter: filterValue });
     });
 
-    // change is-checked class on buttons
-    $('.btn-group').each( function( i, buttonGroup ) {
-      var $buttonGroup = $( buttonGroup );
-      $buttonGroup.on( 'click', 'button', function() {
-        $buttonGroup.find('.active').removeClass('active');
-        $( this ).addClass('active');
-      });
-    });
-
-    // layout Isotope after each image loads
-    $grid.imagesLoaded().progress( function() {
-      $grid.isotope('layout');
-    });
     
 });

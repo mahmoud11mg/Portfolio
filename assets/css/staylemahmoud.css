@@ -7,7 +7,7 @@
   -o-transform: scale(1.2, 1.1);
 }
 
-.label .ball, .label, .light, .light .skills, .dark h2, .dark .skills, .dark {
+.label .ball, .label, .light, .dark h2, .dark {
   transition: all 0.9s ease-in-out;
 }
 
@@ -95,11 +95,6 @@ body {
   filter: alpha(opacity=70);
   animation-fill-mode: both;
 }
-.dark .skills {
-  background-image: url("../img/Skills/backDar.jpg") !important;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 .dark h2 {
   color: #55c550 !important;
   filter: alpha(opacity=70);
@@ -151,11 +146,6 @@ body {
   filter: alpha(opacity=90) !important;
   animation-fill-mode: both;
   -webkit-filter: alpha(opacity=90) !important;
-}
-.light .skills {
-  background-image: url("../img/Skills/background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .light .shadowimg {
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.563), 0 17px 50px 0 rgba(0, 0, 0, 0.563);

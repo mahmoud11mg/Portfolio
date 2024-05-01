@@ -152,7 +152,7 @@ body {
 }
 .loading-img:hover {
   margin-left: 50px;
-  @extend %transformRotate;
+  @extend %transform;
 }
 
 /* Close shadow in dark mode if it has the light class */
@@ -169,7 +169,7 @@ body {
   &:hover {
     animation: zoom-in-zoom-out 5s ease infinite;
     -webkit-animation: zoom-in-zoom-out 5s ease infinite;
-    @extend %transformRotate;
+    @extend %transform;
   }
 }
 //Certificates
@@ -238,4 +238,7 @@ body {
 .imgSkills {
   display: block;
   margin: auto;
+}
+.rotate:hover {
+  @extend %transformRotate;
 }

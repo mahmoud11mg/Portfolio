@@ -90,6 +90,14 @@ body {
   color: #55c550 !important;
 }
 
+.CV-modal {
+  color: #55c550 !important;
+}
+.CV-modal:hover {
+  color: #55c550 !important;
+  text-decoration: none;
+}
+
 .one-quarter {
   margin-top: auto;
 }

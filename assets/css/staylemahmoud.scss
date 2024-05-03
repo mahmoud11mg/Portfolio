@@ -29,6 +29,14 @@ body {
 .CV {
   color: $mainColor !important;
 }
+.CV-modal {
+  color: #55c550 !important;
+  &:hover {
+    color: $mainColor !important;
+    text-decoration: none;
+  }
+}
+
 .one-quarter {
   margin-top: auto;
 }

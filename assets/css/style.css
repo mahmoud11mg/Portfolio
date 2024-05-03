@@ -448,7 +448,7 @@ a.close.disabled {
 
 .modal {
   position: fixed;
-  top: 0;
+  top: 90px;
   left: 0;
   z-index: 1050;
   display: none;
@@ -915,18 +915,6 @@ footer .left {
 .modal-open .modal {
   overflow-x: hidden;
   overflow-y: auto;
-}
-
-.modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1050;
-  display: none;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  outline: 0;
 }
 
 .modal-dialog {

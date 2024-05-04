@@ -11,7 +11,7 @@
 7. OOP
 8. CSS
 9. Bootstrap
-10. Sass
-11. Scss
+10. Tailwind CSS
+11. Sass & Scss
 12. Json
 13. API

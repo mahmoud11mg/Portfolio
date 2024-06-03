@@ -448,7 +448,7 @@ a.close.disabled {
 
 .modal {
   position: fixed;
-  top: 90px;
+  top: -12px;
   left: 0;
   z-index: 1050;
   display: none;

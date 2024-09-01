@@ -275,15 +275,7 @@ progress {
     animation-fill-mode: both;
     -webkit-filter: alpha(opacity=1);
   }
-  &:not(:disabled):not(.disabled):active,
-  &:not(:disabled):not(.disabled).active,
-  .show > .btn-info.dropdown-toggle {
-    color: #fff;
-    background-color: $mainbackground !important;
-    border-color: $mainColor !important;
-    border: none;
-    transition: all 1.1s;
-  }
+
 }
 
 .fade {
@@ -333,11 +325,7 @@ progress {
   :focus {
     text-decoration: none;
   }
-  .active,
-  .show > .nav-link {
-    color: #fff;
-    background-color: $mainbackground !important;
-  }
+  
 }
 
 .progress {

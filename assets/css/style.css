@@ -322,14 +322,6 @@ progress {
   animation-fill-mode: both;
   -webkit-filter: alpha(opacity=1);
 }
-.btn-info:not(:disabled):not(.disabled):active, .btn-info:not(:disabled):not(.disabled).active,
-.btn-info .show > .btn-info.dropdown-toggle {
-  color: #fff;
-  background-color: #06223d !important;
-  border-color: #55c550 !important;
-  border: none;
-  transition: all 1.1s;
-}
 
 .fade {
   transition: opacity 0.15s linear;
@@ -371,11 +363,6 @@ progress {
 .nav-link:hover,
 .nav-link :focus {
   text-decoration: none;
-}
-.nav-link .active,
-.nav-link .show > .nav-link {
-  color: #fff;
-  background-color: #06223d !important;
 }
 
 .progress {

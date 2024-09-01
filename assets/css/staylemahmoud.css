@@ -299,3 +299,8 @@ body {
   display: block;
   margin: auto;
 }/*# sourceMappingURL=staylemahmoud.css.map */
+.active{
+  background: #55c550 !important;
+  color: #06223d !important;
+
+}

@@ -1,249 +1,177 @@
 @import "styleimpo";
 
-@media (min-width: 500px) and (max-width: 767px) {
-  //nav
-  .navbar {
-    height: 5% !important;
-  }
-  .navbar-nav {
-    margin-top: -10px;
-  }
-  .navbar-expand-lg > .container-fluid {
-    background-color: $mainbackground !important;
-  }
-  .is-sticky .navbar {
-    background-color: $mainbackground !important;
-    z-index: 9999 !important;
-  }
-  //End nav
-
-  .img_size {
-    width: 80% !important;
-    height: 80% !important;
-    margin: auto;
-    display: block;
-  }
-  .container {
+// Base Styles
+.navbar {
+  height: 5%;
+}
+.navbar-nav {
+  margin-top: -10px;
+}
+.navbar-expand-lg > .container-fluid,
+.is-sticky .navbar {
+  background-color: $mainbackground;
+  z-index: 9999;
+}
+.img_size {
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  display: block;
+}
+.container {
+  max-width: 540px;
+  .container-sm {
     max-width: 540px;
-
-    .container-sm {
-      max-width: 540px;
+  }
+}
+.me {
+  text-align: center;
+  width: 90%;
+  .about {
+    width: 50%;
+    position: relative;
+    left: -150px;
+    bottom: -190px;
+    p {
+      font-size: 20px;
     }
   }
+  .my-img {
+    width: 30%;
+    margin-top: -53%;
+    position: relative;
+    left: 25%;
+    top: 50px;
+  }
+}
+.testimonials {
+  width: 100%;
+  h2 {
+    margin-bottom: 0;
+  }
+  .lead {
+    margin-bottom: 15px;
+  }
+}
+.resize {
+  margin-left: 100px;
+}
+.Testimo {
+  margin-right: -100px;
+}
+.skill-bx {
+  margin-bottom: 20px;
+  h3 {
+    font-size: 25px;
+  }
+  .rate {
+    font-size: 43px;
+  }
+}
+.hire {
+  width: 13%;
+  color: #86e682;
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+  z-index: 1000;
+  font-weight: bold;
+  font-size: 17px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+footer {
+  .left {
+    bottom: -34px;
+  }
+  .socials .i_icone {
+    color: #fff;
+    margin-right: 5px;
+    font-size: 25px;
+  }
+  .copyright {
+    position: relative;
+    top: 50px;
+  }
+}
 
+// Media Queries
+
+// Small Screens (500px to 767px)
+@media (min-width: 500px) and (max-width: 767px) {
+  .navbar {
+    height: 5%;
+  }
+  .img_size {
+    width: 80%;
+    height: 80%;
+  }
   .me {
-    text-align: center;
-    width: 90%;
-
+    width: 100%; // Adjust to use full width on mobile
     .about {
-      width: 50%;
-      position: relative;
-      left: -150px !important;
-      bottom: -190px !important;
-
+      width: 90%; // Reduce width to prevent overflow
+      left: -10px; // Minimize left position to reduce space
+      bottom: -100px; // Adjust bottom position to reduce gap
       p {
-        font-size: 20px;
+        font-size: 16px; // Slightly smaller text size for better fit
       }
     }
-
     .my-img {
-      width: 30%;
-      margin-top: -53%;
-      position: relative;
-      left: 25%;
-      top: 50px;
-    }
-  }
-
-  .testimonials {
-    width: 100%;
-
-    h2 {
-      margin-bottom: 0;
-    }
-
-    .lead {
-      margin-bottom: 15px;
-    }
-  }
-
-  .resize {
-    margin-left: 100px;
-  }
-  .Testimo {
-    margin-right: -100px;
-  }
-
-  .skill-bx {
-    margin-bottom: 20px;
-    h3 {
-      font-size: 25px !important;
-    }
-
-    .rate {
-      font-size: 43px;
+      width: 40%; // Increase image size for better visibility
+      left: 30%; // Adjust left position to center the image
+      top: 20px; // Adjust top position to reduce vertical space
     }
   }
 }
 
-// Smart Phone And Tablets
+// Tablets (768px and up)
 @media (min-width: 768px) {
-  //nav
   .navbar {
-    height: 8% !important;
+    height: 8%;
   }
-  .navbar-nav {
-    margin-top: -10px;
-  }
-  .navbar-expand-lg > .container-fluid {
-    background-color: $mainbackground !important;
-  }
-  .is-sticky .navbar {
-    background-color: $mainbackground !important;
-    z-index: 9999 !important;
-  }
-  //End nav
-  .testimonials {
-    width: 100%;
-
-    h2 {
-      margin-bottom: 0;
-    }
-
-    .lead {
-      margin-bottom: 15px;
-    }
-  }
-
-  .resize {
-    margin-left: 100px;
-  }
-  .Testimo {
-    margin-right: -100px;
-  }
-
   .container {
     max-width: 720px;
-
-    .container-sm,
-    .container-md {
+    .container-sm, .container-md {
       max-width: 720px;
     }
   }
-
-  .img_size {
-    width: 100% !important;
-
-    height: 100% !important;
-    margin: auto;
-    display: block;
-  }
-
   header {
     padding: 150px 0 50px 0;
   }
-
-  .mfp-container {
-    padding-left: 6px;
-    padding-right: 6px;
-  }
-
   .btn-group {
     flex-wrap: wrap;
   }
-
   .col-sm-6 {
     width: 50%;
     padding: 0 5px;
   }
-
   .popup {
     max-width: 100%;
-
     h2 {
       font-size: 30px;
     }
   }
-
   .hire {
     width: 13%;
-    color: #86e682;
-    position: fixed;
-    bottom: 40px;
-    right: 30px;
-    z-index: 1000;
-    font-weight: bold;
-    font-size: 17px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   }
-
   .me {
-    text-align: center;
     width: 50%;
-
     .about {
       width: 50%;
     }
-
     .my-img {
       width: 35%;
-      height: 35%;
-      position: relative;
       left: 20px;
     }
   }
-
-  .skill-bx {
-    margin-bottom: 20px;
-    h3 {
-      font-size: 20px !important;
-    }
-
-    .rate {
-      font-size: 43px;
-    }
-  }
   footer {
-    .left {
-      bottom: -34px;
-    }
-
-    .socials .i_icone {
-      color: #fff;
-      margin-right: 5px;
-      font-size: 25px;
-    }
     .copyright {
-      position: relative;
-      top: 50px !important;
+      top: 50px;
     }
   }
 }
 
-// Small Screen
+// Small Screens (768px to 991px)
 @media (min-width: 768px) and (max-width: 991px) {
-  //nav
-
-  .navbar-expand-lg > .container-fluid {
-    background-color: $mainbackground !important;
-  }
-  .is-sticky .navbar {
-    background-color: $mainbackground !important;
-    z-index: 9999 !important;
-  }
-  //End nav
-  .testimonials {
-    width: 100%;
-
-    h2 {
-      margin-bottom: 0;
-    }
-
-    .lead {
-      margin-bottom: 15px;
-    }
-  }
-
   .resize {
     margin-left: 68px;
   }
@@ -254,281 +182,108 @@
     width: 16%;
     font-size: 20px;
   }
-
   .me {
-    text-align: center;
     width: 50%;
-
     .about {
       width: 50%;
     }
-
     .my-img {
       width: 50%;
-      position: relative;
       left: 10px;
     }
   }
-
   .skill-bx {
-    margin-bottom: 20px;
     h3 {
-      font-size: 15px !important;
-    }
-
-    .rate {
-      font-size: 43px;
+      font-size: 15px;
     }
   }
   .grid-item {
     width: 30%;
   }
-
-  footer {
-    .left {
-      bottom: -34px;
-    }
-
-    .socials .i_icone {
-      color: #fff;
-      margin-right: 5px;
-      font-size: 25px;
-    }
-    .copyright {
-      position: relative;
-      top: 50px !important;
-    }
-  }
 }
 
-// Medium Screen
+// Medium Screens (992px to 1199px)
 @media (min-width: 992px) and (max-width: 1199px) {
-  .navbar-expand-lg > .container-fluid {
-    background-color: $mainbackground !important;
-  }
-  .is-sticky .navbar {
-    background-color: $mainbackground !important;
-    z-index: 9999 !important;
-  }
-  .testimonials {
-    width: 100%;
-
-    h2 {
-      margin-bottom: 0;
-    }
-
-    .lead {
-      margin-bottom: 15px;
-    }
-  }
-
-  .resize {
-    margin-left: 100px;
-  }
-  .Testimo {
-    margin-right: -100px;
-  }
-  .my-img {
-    width: 20%;
-    position: relative;
-    left: 15px;
-  }
-
   .container {
     max-width: 960px;
-
-    .container-sm,
-    .container-md,
-    .container-lg {
+    .container-sm, .container-md, .container-lg {
       max-width: 960px;
     }
   }
-
-  .hire {
-    width: 18%;
-    font-size: 20px;
-  }
-
   header {
     padding: 200px 0;
   }
-
   section {
     padding: 50px 0;
-
     h2 {
       font-size: 35px;
       margin-bottom: 30px;
     }
   }
-
   .navbar {
-    z-index: 1000;
-
     .navbar-brand {
       max-width: 190px;
     }
   }
-
-  h3,
-  .h3 {
-    font-size: 1.2rem;
-  }
-
   .me {
-    text-align: center;
     width: 50%;
-
     .about {
       width: 90%;
     }
-
     .my-img {
       width: 50%;
     }
   }
-  .skill-bx {
-    margin-bottom: 20px;
-    h3 {
-      font-size: 20px !important;
-    }
-
-    .rate {
-      font-size: 43px;
-    }
-  }
-
-  .col {
-    flex-basis: auto;
-    width: 30%;
-  }
-
-  .img_size {
-    width: 200% !important;
-    height: 90% !important;
-    margin: auto;
-    display: block;
-  }
-
-  .modal-lg,
-  .modal-xl {
-    max-width: 800px;
-  }
-  footer {
-    .left {
-      bottom: -34px;
-    }
-
-    .socials .i_icone {
-      color: #fff;
-      margin-right: 5px;
-      font-size: 25px;
-    }
-    .copyright {
-      position: relative;
-      top: 50px !important;
-    }
-  }
 }
 
-// Large Screen
+// Large Screens (1200px and up)
 @media (min-width: 1200px) {
-  .testimonials {
-    width: 100%;
-
-    h2 {
-      margin-bottom: 0;
-    }
-
-    .lead {
-      margin-bottom: 15px;
-    }
-  }
-  .resize {
-    margin-left: 100px;
-  }
-  .Testimo {
-    margin-right: -100px;
-  }
   .container {
     max-width: 1140px;
-
-    .container-sm,
-    .container-md,
-    .container-lg,
-    .container-xl {
+    .container-sm, .container-md, .container-lg, .container-xl {
       max-width: 1140px;
     }
   }
-
   .img_size {
-    width: 110% !important;
-    height: 110% !important;
-    margin: auto;
-    display: block;
+    width: 110%;
+    height: 110%;
   }
-
-  .hire {
-    width: 20%;
-    font-size: 20px;
-  }
-
   .me {
-    text-align: center;
     width: 50%;
-
     .about {
       width: 90%;
     }
-
     .my-img {
       width: 50%;
     }
   }
 }
 
-// Print
+// Print Styles
 @media print {
-  *,
-  *::before,
-  *::after {
-    text-shadow: none !important;
-    box-shadow: none !important;
+  *, *::before, *::after {
+    text-shadow: none;
+    box-shadow: none;
   }
-
   a:not(.btn) {
     text-decoration: underline;
   }
-
-  tr,
-  img {
+  tr, img {
     page-break-inside: avoid;
   }
-
-  p,
-  h2,
-  h3 {
+  p, h2, h3 {
     orphans: 3;
     widows: 3;
   }
-
-  h2,
-  h3 {
+  h2, h3 {
     page-break-after: avoid;
   }
-
   @page {
     size: a3;
   }
-
-  body {
-    min-width: 992px !important;
+  body, .container {
+    min-width: 992px;
   }
-
-  .container {
-    min-width: 992px !important;
-  }
-
   .navbar {
     display: none;
   }

@@ -5573,7 +5573,6 @@
   );
 });
 
-
 /*! Bootstrap v4.5.0 (https://getbootstrap.com/)*/
 !(function (t, e) {
   "object" == typeof exports && "undefined" != typeof module
@@ -10478,6 +10477,7 @@ function _typeof(t) {
       setTimeout(p, 0);
     });
 });
+
 /*Scrolling nav*/
 !(function (e) {
   "use strict";
@@ -10512,6 +10512,7 @@ function _typeof(t) {
     ? define(t)
     : ((e = e || self).Swiper = t());
 })(this, function () {
+  
   "use strict";
   function e(e) {
     return (

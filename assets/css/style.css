@@ -62,6 +62,12 @@ html {
   -webkit-tap-highlight-color: transparent;
 }
 
+body {
+  margin: 0; /* Removes default body margin */
+  height: 100vh; /* Full viewport height */
+  overflow: auto; /* Ensures the content does not disappear */
+}
+
 article,
 footer,
 header,

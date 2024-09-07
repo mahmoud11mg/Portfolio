@@ -1,3 +1,12 @@
+let resizeTimeout;
+window.addEventListener('resize', () => {
+  clearTimeout(resizeTimeout);
+  resizeTimeout = setTimeout(() => {
+    // Handle resize logic here
+    console.log('Resized');
+  }, 200);
+});
+
 /*! jQuery v3.5.1 | (c) JS Foundation and other contributors | jquery.org/license */
 !(function (e, t) {
   "use strict";

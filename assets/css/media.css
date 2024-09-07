@@ -60,6 +60,7 @@
 
 .me {
   width: 100%;
+  display: inline-block;
 }
 .me .about {
   width: 100%;
@@ -68,11 +69,11 @@
   bottom: -55px;
 }
 .me .about h1 {
-  font-size: 18px;
+  font-size: 45px;
 }
 .me .about p {
-  margin-top: 20px;
-  font-size: 16px;
+  margin-top: 5px;
+  font-size: 20px !important;
 }
 .me .my-img {
   width: 100%;
@@ -80,10 +81,10 @@
   top: 20px;
 }
 .me .my-img img {
-  width: 40%;
+  width: 215%;
   position: relative;
-  left: 30%;
-  bottom: 320px;
+  left: 24%;
+  bottom: 509px;
   border-radius: 100%;
   -webkit-border-radius: 100%;
   border: 5px solid #fff;

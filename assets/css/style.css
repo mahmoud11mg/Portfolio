@@ -187,11 +187,6 @@ a:not([href]):hover {
   text-decoration: none;
 }
 
-img {
-  vertical-align: middle;
-  border-style: none;
-}
-
 label {
   display: inline-block;
   margin-bottom: 0.5rem;
@@ -627,7 +622,6 @@ section h2 {
 }
 
 img {
-  max-width: 100%;
   height: auto;
   animation: fadeInBottom 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) both;
 }
@@ -727,13 +721,8 @@ header .bg {
   position: relative;
   right: 0%;
   top: 300px;
-  max-width: 280px;
   margin-right: 30px;
   box-shadow: 0 0 10px rgba(5, 23, 41, 0.4666666667);
-}
-.me .my-img img {
-  border-radius: 100%;
-  -webkit-border-radius: 100%;
 }
 
 .skill-bx h3 {

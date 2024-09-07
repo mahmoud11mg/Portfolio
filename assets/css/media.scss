@@ -14,16 +14,12 @@
     z-index: 9999;
   }
 }
-
-
-
 .img_size {
   width: 80%;
   height: 80%;
   margin: auto;
   display: block;
 }
-
 .container {
   max-width: 540px;
 
@@ -34,7 +30,7 @@
 
 .me {
   width: 100%;
-
+display: inline-block;
   .about {
     width: 100%;
     position: relative;
@@ -42,13 +38,14 @@
     bottom: -55px;
 
     h1 {
-      font-size: 18px;
+      font-size: 45px;
+
     }
 
     p {
 
-      margin-top: 20px;
-      font-size: 16px;
+      margin-top: 5px;
+      font-size: 20px !important;
     }
 
   }
@@ -59,10 +56,10 @@
     top: 20px;
 
     img {
-      width: 40%;
+      width: 215%;
       position: relative;
-      left: 30%;
-      bottom: 320px;
+      left: 24%;
+      bottom: 509px;
       border-radius: 100%;
       -webkit-border-radius: 100%;
       border: 5px solid #fff;

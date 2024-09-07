@@ -57,8 +57,11 @@
   }
   
   .my-img {
-    width: 30%;
-    margin-top: -45%;
+      width: 50%;
+      position: relative;
+      top: 250px;
+      right: 415px ;
+      max-width: 280px;
     border-radius: 100%;
     border: 5px solid #fff;
     box-shadow: 0 0 10px $mainshadow;
@@ -123,7 +126,8 @@ footer {
     .my-img {
       width: 40%;
       position: relative;
-      top: 180px;
+      top: 70px;
+      right: 0;
       max-width: 280px;
     }
   }
@@ -151,13 +155,13 @@ footer {
     .about {
       width: 50%;
     }
-    
     .my-img {
-      width: 35%;
+      width: 50%;
       position: relative;
-      top: 200px;
-      left: 60px;
+      top: 250px;
+      right: 300px!important;
       max-width: 280px;
+  
     }
   }
   .hire {
@@ -181,10 +185,12 @@ footer {
     }
     
     .my-img {
-      width: 50%;
-      position: relative;
-      top: 200px;
-      max-width: 280px;
+        width: 50%;
+        position: relative;
+        top: 250px;
+        right: 300px !important;
+        max-width: 280px;
+    
     }
   }
   .hire {
@@ -211,7 +217,7 @@ footer {
     .about {
       width: 90%;
       h1{
-        font-size: 25px;
+        font-size: 40px !important;
       }
     }
     
@@ -219,8 +225,9 @@ footer {
       width: 50%;
       position: relative;
       top: 250px;
+      right: 660px ;
       max-width: 280px;
-    }
+  
   }
   .hire {
    
@@ -264,4 +271,5 @@ footer {
   .navbar {
     display: none;
   }
+}
 }

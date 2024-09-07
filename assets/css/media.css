@@ -81,8 +81,11 @@
   font-size: 20px;
 }
 .me .my-img {
-  width: 30%;
-  margin-top: -45%;
+  width: 50%;
+  position: relative;
+  top: 250px;
+  right: 415px;
+  max-width: 280px;
   border-radius: 100%;
   border: 5px solid #fff;
   box-shadow: 0 0 10px rgba(5, 23, 41, 0.4666666667);
@@ -137,7 +140,8 @@ footer .copyright {
   .me .my-img {
     width: 40%;
     position: relative;
-    top: 180px;
+    top: 70px;
+    right: 0;
     max-width: 280px;
   }
   .hire {
@@ -160,10 +164,10 @@ footer .copyright {
     width: 50%;
   }
   .me .my-img {
-    width: 35%;
+    width: 50%;
     position: relative;
-    top: 200px;
-    left: 60px;
+    top: 250px;
+    right: 300px !important;
     max-width: 280px;
   }
   .hire {
@@ -185,7 +189,8 @@ footer .copyright {
   .me .my-img {
     width: 50%;
     position: relative;
-    top: 200px;
+    top: 250px;
+    right: 300px !important;
     max-width: 280px;
   }
   .hire {
@@ -209,19 +214,20 @@ footer .copyright {
     width: 90%;
   }
   .me .about h1 {
-    font-size: 25px;
+    font-size: 40px !important;
   }
   .me .my-img {
     width: 50%;
     position: relative;
     top: 250px;
+    right: 660px;
     max-width: 280px;
   }
-  .hire {
+  .me .hire {
     right: 40px;
   }
 }
-@media print {
+@media print and (min-width: 1200px) {
   *, *::before, *::after {
     text-shadow: none;
     box-shadow: none;

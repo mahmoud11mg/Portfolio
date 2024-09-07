@@ -2,100 +2,61 @@
 
 // Base Styles
 .navbar {
-  height: 5%;
+  height: 9%;
   width: 100% !important;
+  background-color: $mainbackground;
+  z-index: 9999;
+  
+  .navbar-toggler {
+    position: relative;
+    bottom: 10px;
+    right: 15px;
+    background-color: $mainbackground;
+    &:hover {
+      background-color: #0e2032;
+    }
+  }
+  
   .navbar-nav {
     margin-top: -10px;
   }
-  
-  .navbar-expand-lg>.container-fluid,
-  .navbar {
-    background-color: $mainbackground;
-    z-index: 9999;
-  }
 }
+
 .img_size {
   width: 80%;
   height: 80%;
   margin: auto;
   display: block;
 }
+
 .container {
   max-width: 540px;
-
+  
   .container-sm {
     max-width: 540px;
   }
 }
 
 .me {
-  width: 100%;
-display: inline-block;
+  text-align: center;
+  width: 90%;
+  
   .about {
     width: 100%;
     position: relative;
-    right: 100px;
-    bottom: -55px;
-
-    h1 {
-      font-size: 45px;
-
-    }
-
+    left: 150px;
+    bottom: -190px;
     p {
-
-      margin-top: 5px;
-      font-size: 20px !important;
+      font-size: 20px;
     }
-
   }
-
+  
   .my-img {
-    width: 100%;
-    left: 0%;
-    top: 20px;
-
-    img {
-      width: 215%;
-      position: relative;
-      left: 24%;
-      bottom: 509px;
-      border-radius: 100%;
-      -webkit-border-radius: 100%;
-      border: 5px solid #fff;
-    }
-  }
-}
-
-.testimonials {
-  width: 100%;
-
-  h2 {
-    margin-bottom: 0;
-  }
-
-  .lead {
-    margin-bottom: 15px;
-  }
-}
-
-.resize {
-  margin-left: 100px;
-}
-
-.Testimo {
-  margin-right: -100px;
-}
-
-.skill-bx {
-  margin-bottom: 20px;
-
-  h3 {
-    font-size: 25px;
-  }
-
-  .rate {
-    font-size: 43px;
+    width: 30%;
+    margin-top: -45%;
+    border-radius: 100%;
+    border: 5px solid #fff;
+    box-shadow: 0 0 10px $mainshadow;
   }
 }
 
@@ -115,443 +76,159 @@ footer {
   .left {
     bottom: -34px;
   }
-
+  
   .socials .i_icone {
     color: #fff;
     margin-right: 5px;
     font-size: 25px;
   }
-
+  
   .copyright {
     position: relative;
     top: 50px;
   }
 }
 
-
 // Media Queries
-
-// Small Screens (500px to 767px)
-@media (min-width: 500px) and (max-width: 767px) {
-  .bg {
-    background-size: cover;
-    background-position: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1 !important;
-    object-fit: fill;
-  }
-
+@media (max-width: 767px) {
   .navbar {
     height: 5%;
   }
-
+  
   .img_size {
     width: 80%;
     height: 80%;
   }
-
+  
   .me {
     width: 100%;
-
+    
     .about {
-      width: 100%;
-      position: relative;
-      left: -100px;
-      bottom: -55px;
-
-      h1 {
-        font-size: 19px;
-      }
-
+      width: 80%;
+      left: -10px;
+      bottom: -100px;
       p {
-        width: 100%;
-        margin-top: 20px;
         font-size: 16px;
       }
-
     }
-
+    
     .my-img {
-      width: 100%;
-      left: 0%;
-      top: 20px;
-
-      img {
-        width: 60%;
-        position: relative;
-        left: 5%;
-        bottom: 300px;
-        border-radius: 100%;
-        -webkit-border-radius: 100%;
-        border: 5px solid #fff;
-      }
+      width: 40%;
+      position: relative;
+      top: 180px;
+      max-width: 280px;
     }
   }
 }
 
-// Tablets (768px and up)
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .navbar {
     height: 8%;
   }
-
+  
   .container {
     max-width: 720px;
-
-    .container-sm,
-    .container-md {
-      max-width: 720px;
-    }
   }
-
-  header {
-    padding: 150px 0 50px 0;
-
-    .bg {
-      background-size: cover;
-      background-position: center;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 1 !important;
-      object-fit: fill;
-    }
-  }
-
-  .btn-group {
-    flex-wrap: wrap;
-  }
-
-  .col-sm-6 {
+  
+  .me {
     width: 50%;
-    padding: 0 5px;
-  }
-
-  .popup {
-    max-width: 100%;
-
-    h2 {
-      font-size: 30px;
-    }
-  }
-
-  .hire {
-    width: 13%;
-  }
-
-  .me {
-    width: 100%;
-
+    
     .about {
-      width: 100%;
-      position: relative;
-      left: -100px;
-      bottom: -55px;
-
-      h1 {
-        font-size: 25px;
-      }
-
-      p {
-        width: 100%;
-        margin-top: 20px;
-        font-size: 16px;
-      }
-
+      width: 50%;
     }
-
+    
     .my-img {
-      width: 100%;
-      left: 0%;
-      top: 20px;
-
-      img {
-        width: 60%;
-        position: relative;
-        left: -20%;
-        bottom: 350px;
-        border-radius: 100%;
-        -webkit-border-radius: 100%;
-        border: 5px solid #fff;
-      }
-    }
-  }
-
-  footer {
-    .copyright {
-      top: 50px;
+      width: 35%;
+      position: relative;
+      top: 200px;
+      left: 60px;
+      max-width: 280px;
     }
   }
 }
 
-// Small Screens (768px to 991px)
-@media (min-width: 768px) and (max-width: 991px) {
-  .bg {
-    background-size: cover;
-    background-position: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-
-    z-index: 1 !important;
-    object-fit: fill;
-  }
-
-  .resize {
-    margin-left: 68px;
-  }
-
-  .Testimo {
-    margin-right: -39px;
-  }
-
-  .hire {
-    width: 16%;
-    font-size: 20px;
-  }
-
-  .me {
-    width: 100%;
-
-    .about {
-      width: 100%;
-      position: relative;
-      left: -100px;
-      bottom: -55px;
-
-      h1 {
-        font-size: 25px;
-      }
-
-      p {
-        width: 100%;
-        margin-top: 20px;
-        font-size: 16px;
-      }
-
-    }
-
-    .my-img {
-      width: 100%;
-      left: 0%;
-      top: 20px;
-
-      img {
-        width: 60%;
-        position: relative;
-        left: 10%;
-        bottom: 250px;
-        border-radius: 100%;
-        -webkit-border-radius: 100%;
-        border: 5px solid #fff;
-      }
-    }
-  }
-
-  .skill-bx {
-    h3 {
-      font-size: 15px;
-    }
-  }
-
-  .grid-item {
-    width: 30%;
-  }
-}
-
-// Medium Screens (992px to 1199px)
 @media (min-width: 992px) and (max-width: 1199px) {
-  .bg {
-    background-size: cover;
-    background-position: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1 !important;
-    object-fit: fill;
-  }
-
   .container {
     max-width: 960px;
-
-    .container-sm,
-    .container-md,
-    .container-lg {
-      max-width: 960px;
-    }
   }
-
-  header {
-    padding: 200px 0;
-  }
-
-  section {
-    padding: 50px 0;
-
-    h2 {
-      font-size: 35px;
-      margin-bottom: 30px;
-    }
-  }
-
-  .navbar {
-    .navbar-brand {
-      max-width: 190px;
-    }
-  }
-
+  
   .me {
-    width: 100%;
-
+    width: 50%;
+    
     .about {
-      width: 100%;
-      position: relative;
-      left: -100px;
-      bottom: -55px;
-
-      h1 {
-        font-size: 44px;
-      }
-
-      p {
-        width: 100%;
-        margin-top: 20px;
-        font-size: 16px;
-      }
-
+      width: 90%;
     }
-
+    
     .my-img {
-      width: 100%;
-      left: 0%;
-      top: 20px;
-
-      img {
-        width: 90%;
-        position: relative;
-        left: -20%;
-        bottom: 250px;
-      }
+      width: 50%;
+      position: relative;
+      top: 200px;
+      max-width: 280px;
     }
   }
 }
 
-// Large Screens (1200px and up)
 @media (min-width: 1200px) {
-  .bg {
-    background-size: cover;
-    background-position: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1 !important;
-    object-fit: fill;
-  }
-
   .container {
     max-width: 1140px;
-
-    .container-sm,
-    .container-md,
-    .container-lg,
-    .container-xl {
-      max-width: 1140px;
-    }
   }
-
+  
   .img_size {
     width: 110%;
     height: 110%;
   }
-
+  
   .me {
-    width: 100%;
-
+    width: 50%;
+    
     .about {
-      width: 100%;
-      position: relative;
-      left: -100px;
-      bottom: -55px;
-
-      h1 {
-        font-size: 45px;
+      width: 90%;
+      h1{
+        font-size: 25px;
       }
-
-      p {
-        width: 100%;
-        margin-top: 20px;
-        font-size: 21px;
-      }
-
     }
-
+    
     .my-img {
-      width: 100%;
-
-      img {
-        width: 100%;
-        position: relative;
-        left: -31%;
-        bottom: 250px;
-        border-radius: 100%;
-        -webkit-border-radius: 100%;
-        border: 5px solid #fff;
-      }
+      width: 50%;
+      position: relative;
+      top: 250px;
+      max-width: 280px;
     }
   }
 }
 
 // Print Styles
 @media print {
-
-  *,
-  *::before,
-  *::after {
+  *, *::before, *::after {
     text-shadow: none;
     box-shadow: none;
   }
-
+  
   a:not(.btn) {
     text-decoration: underline;
   }
-
-  tr,
-  img {
+  
+  tr, img {
     page-break-inside: avoid;
   }
-
-  p,
-  h2,
-  h3 {
+  
+  p, h2, h3 {
     orphans: 3;
     widows: 3;
   }
-
-  h2,
-  h3 {
+  
+  h2, h3 {
     page-break-after: avoid;
   }
-
+  
   @page {
     size: a3;
   }
-
-  body,
-  .container {
+  
+  body, .container {
     min-width: 992px;
   }
-
+  
   .navbar {
     display: none;
   }

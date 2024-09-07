@@ -1132,32 +1132,4 @@ footer {
 .dark-mode .modal-content.bg-success .modal-footer,
 .dark-mode .modal-content.bg-success .modal-header {
   border-color: #fff;
-}/* Base Styles */
-body {
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-/* Desktop and large screens */
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-}
-
-/* Tablets */
-@media (max-width: 768px) {
-  .container {
-    padding: 0 20px;
-  }
-}
-
-/* Mobile */
-@media (max-width: 480px) {
-  .container {
-    padding: 0 10px;
-    font-size: 1rem;
-  }
 }

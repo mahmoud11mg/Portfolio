@@ -144,11 +144,6 @@ footer .copyright {
     right: 0;
     max-width: 280px;
   }
-  .hire {
-    width: 22% !important;
-    position: fixed;
-    right: 25px;
-  }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .navbar {
@@ -170,11 +165,6 @@ footer .copyright {
     right: 300px !important;
     max-width: 280px;
   }
-  .hire {
-    width: 22% !important;
-    position: fixed;
-    right: 45px;
-  }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .container {
@@ -192,11 +182,6 @@ footer .copyright {
     top: 250px;
     right: 300px !important;
     max-width: 280px;
-  }
-  .hire {
-    width: 22% !important;
-    position: fixed;
-    right: 57px;
   }
 }
 @media (min-width: 1200px) {
@@ -222,9 +207,6 @@ footer .copyright {
     top: 250px;
     right: 660px;
     max-width: 280px;
-  }
-  .me .hire {
-    right: 40px;
   }
 }
 @media print and (min-width: 1200px) {

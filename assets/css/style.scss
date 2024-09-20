@@ -759,25 +759,25 @@ footer {
   }
 }
 
-.hire {
-  width: 11%;
-  color: $mainColor !important;
-  position: fixed;
-  bottom: 40px;
-  right: 30px;
-  z-index: 1000;
-  font-weight: bold;
-  font-size: 20px;
-  box-shadow: 0 0 20px rgba(219, 211, 211, 0.349);
-  background-color: $mainbackground !important;
-  animation: zoom-in-zoom-out 1s ease infinite;
-  -webkit-animation: zoom-in-zoom-out 1s ease infinite;
-  @extend %transform;
+// .hire {
+//   width: 11%;
+//   color: $mainColor !important;
+//   position: fixed;
+//   bottom: 151px;
+//   right: 55px;
+//   z-index: 1000;
+//   font-weight: bold;
+//   font-size: 20px;
+//   box-shadow: 0 0 20px rgba(219, 211, 211, 0.349);
+//   background-color: $mainbackground !important;
+//   animation: zoom-in-zoom-out 1s ease infinite;
+//   -webkit-animation: zoom-in-zoom-out 1s ease infinite;
+//   @extend %transform;
 
-  i {
-    margin-left: 10px;
-  }
-}
+//   i {
+//     margin-left: 10px;
+//   }
+// }
 .grid {
   margin-right: -5px;
   margin-left: -5px;

@@ -1,4 +1,4 @@
-.grid .grid-item a::after, .hire {
+.grid .grid-item a::after {
   transition: all 1.1s;
   transform: scale(1.2, 1.1);
   -webkit-transform: scale(1.2, 1.1);
@@ -790,24 +790,6 @@ footer .socials .i_icone {
 footer .left {
   position: relative;
   bottom: 0px;
-}
-
-.hire {
-  width: 11%;
-  color: #55c550 !important;
-  position: fixed;
-  bottom: 40px;
-  right: 30px;
-  z-index: 1000;
-  font-weight: bold;
-  font-size: 20px;
-  box-shadow: 0 0 20px rgba(219, 211, 211, 0.349);
-  background-color: #06223d !important;
-  animation: zoom-in-zoom-out 1s ease infinite;
-  -webkit-animation: zoom-in-zoom-out 1s ease infinite;
-}
-.hire i {
-  margin-left: 10px;
 }
 
 .grid {

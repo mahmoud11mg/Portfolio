@@ -1,12 +1,15 @@
 @import "styleimpo";
+
 * {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
+
 body {
   overflow: auto;
 }
+
 .lazy {
   width: 17%;
   height: 17%;
@@ -19,6 +22,7 @@ body {
   width: 15px;
   box-shadow: inset 0 0 5px $mainbackground !important;
 }
+
 /* Handle */
 ::-webkit-scrollbar-thumb,
 .swiper-scrollbar-drag {
@@ -29,8 +33,10 @@ body {
 .CV {
   color: $mainColor !important;
 }
+
 .CV-modal {
   color: #55c550 !important;
+
   &:hover {
     color: $mainColor !important;
     text-decoration: none;
@@ -40,9 +46,11 @@ body {
 .one-quarter {
   margin-top: auto;
 }
+
 .checkbox {
   opacity: 0;
 }
+
 .dark {
   color: $mainColor !important;
   background: #030e1a;
@@ -56,22 +64,27 @@ body {
     @extend%transition;
     animation-fill-mode: both;
   }
+
   .shadowimg {
     box-shadow: 0 12px 16px 0 rgba(255, 255, 255, 0.161),
       0 17px 50px 0 rgba(255, 255, 255, 0.194) !important;
     @include boRadius(7px);
   }
+
   &::-webkit-scrollbar-thumb {
     background: $mainColor !important;
   }
+
   .swiper-scrollbar-drag {
     background: $mainColor !important;
   }
+
   .skill-bx h3 {
     color: $mainColor !important;
   }
+
   .progress {
-    background-color: $mainColor !important ;
+    background-color: $mainColor !important;
   }
 
   .btn-info {
@@ -79,9 +92,10 @@ body {
       border-color: $mainColor;
       transition: all 1.1s;
     }
+
     &:not(:disabled):not(.disabled):active,
     &:not(:disabled):not(.disabled).active,
-    .show > .btn-info.dropdown-toggle {
+    .show>.btn-info.dropdown-toggle {
       color: $mainbackground;
       background: $mainColor;
       border-color: $mainColor;
@@ -91,17 +105,18 @@ body {
   }
 
   .grid .grid-item a img {
-    border: 3px solid $mainColor !important ;
+    border: 3px solid $mainColor !important;
   }
 
   .hvr-sweep-to-right {
     &:before {
-      background: $mainColor !important  ;
+      background: $mainColor !important;
     }
+
     &:active,
     &:hover,
     &:focus {
-      color: $mainbackground !important ;
+      color: $mainbackground !important;
     }
   }
 }
@@ -111,18 +126,22 @@ body {
   @extend%transition;
   animation-fill-mode: both;
   -webkit-filter: alpha(opacity=90) !important;
+
   .shadowimg {
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.563),
       0 17px 50px 0 rgba(0, 0, 0, 0.563);
     @include boRadius(8px);
   }
 }
+
 .fa-moon-o {
   color: #fff;
 }
+
 .fa-sun-o {
   color: #caff37;
 }
+
 .label {
   position: fixed;
   box-sizing: border-box;
@@ -139,6 +158,7 @@ body {
   margin: auto;
   text-align: center;
   @extend%transition;
+
   .ball {
     position: fixed;
     box-sizing: border-box;
@@ -151,13 +171,16 @@ body {
     width: 22px;
     @extend%transition;
   }
+
   .ball:blank {
     background-color: rgb(0, 0, 0);
   }
 }
-.checkbox:checked + .label .ball {
+
+.checkbox:checked+.label .ball {
   transform: translateX(24px);
 }
+
 .loading-img:hover {
   margin-left: 50px;
   @extend %transform;
@@ -167,6 +190,7 @@ body {
 .dark.light.shadowimg {
   box-shadow: none;
 }
+
 //Nav
 //Certificates
 .img_size {
@@ -174,17 +198,20 @@ body {
   height: 100%;
   margin: auto;
   display: block;
+
   &:hover {
     animation: zoom-in-zoom-out 5s ease infinite;
     -webkit-animation: zoom-in-zoom-out 5s ease infinite;
     @extend %transform;
   }
 }
+
 //Certificates
 //Modal
 .socials_hire {
   margin-bottom: 25px;
 }
+
 .a_go {
   color: $mainColor !important;
   text-decoration: none;
@@ -197,7 +224,8 @@ body {
     transition: all 1.1s;
   }
 }
-//Modal
+
+
 .copyright {
   font-size: 20px;
 
@@ -207,7 +235,7 @@ body {
 }
 
 .hvr-underline-from-right:before {
-  background: $mainColor !important ;
+  background: $mainColor !important;
 
   &:active {
     color: $mainColor !important;
@@ -232,21 +260,31 @@ body {
 
 .hvr-sweep-to-right {
   &:before {
-    background: $mainColor !important  ;
+    background: $mainColor !important;
   }
+
   &:active,
   &:hover,
   &:focus {
-    color: $mainbackground !important ;
+    color: $mainbackground !important;
   }
 }
+
 .h3Skills {
   display: inline-block;
 }
+
 .imgSkills {
   display: block;
   margin: auto;
 }
+
 .rotate:hover {
   @extend %transformRotate;
 }
+
+.Modal {
+  width: 0;
+  height: 0;
+}
+//Modal

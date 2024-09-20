@@ -48,10 +48,14 @@
                         <li class="nav-item"><a class="nav-link  hvr-underline-from-right  js-scroll-trigger "
                                 href="#portfolio">Portfolio</a>
                         </li>
-                       
+
                         <li class="nav-item">
                             <a class="CV nav-link  hvr-underline-from-right  js-scroll-trigger " data-toggle="modal"
                                 data-target="#resume">Resume</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="CV nav-link  hvr-underline-from-right  js-scroll-trigger " 
+                            data-toggle="modal" data-target="#exampleModal">Hire me</a>
                         </li>
 
                         <li style=" margin-top: -17px;" class="js-scroll-trigger">
@@ -289,8 +293,7 @@
                     </div>
                 </div> -->
                     <h3 class="h3-Skills">jQuery</h3>
-                    <img class="imgSkills  " src="assets/img/Skills/jQuery.png" alt="jQuery" width="110"
-                        height="110">
+                    <img class="imgSkills  " src="assets/img/Skills/jQuery.png" alt="jQuery" width="110" height="110">
 
                 </div>
 
@@ -441,7 +444,8 @@
                 </div> -->
 
                     <h3 class="h3-Skills">PostgreSQL</h3>
-                    <img class="imgSkills  " src="assets/img/Skills/PostgreSQL.png" alt="PostgreSQL" width="70" height="70">
+                    <img class="imgSkills  " src="assets/img/Skills/PostgreSQL.png" alt="PostgreSQL" width="70"
+                        height="70">
                 </div>
 
 
@@ -468,6 +472,7 @@
             </div>
             <div class="grid grid-portfolio">
                 <div class="row">
+
                     <!--web-hosting 1-->
                     <div class=" col-md-4 col-sm-12  grid-item   fintech" data-category="fintech">
                         <a data-toggle="modal" data-target="#exampleModal-1">
@@ -481,6 +486,7 @@
                             <img src="assets/img/Portfolio/wadiElNile.png" alt="wadiElNile" width="500" height="500">
                         </a>
                     </div>
+
                     <!--freshshop 3-->
                     <div class=" col-md-4 col-sm-12  grid-item     ecommerce " data-category="ecommerce">
                         <a data-toggle="modal" data-target="#exampleModal-3">
@@ -494,12 +500,14 @@
                             <img src="assets/img/Portfolio/payShipping.png" alt="payShipping" width="500" height="500">
                         </a>
                     </div>
+
                     <!--Prosthetics 5-->
                     <div class=" col-md-4 col-sm-12  grid-item     erp " data-category="erp">
                         <a data-toggle="modal" data-target="#exampleModal-5">
                             <img alt="Prosthetics" src="assets/img/Portfolio/Prosthetics.png" width="500" height="500">
                         </a>
                     </div>
+
                     <!--Garden 6-->
                     <div class=" col-md-4 col-sm-12  grid-item     fintech " data-category="business">
                         <a data-toggle="modal" data-target="#exampleModal-6">
@@ -548,12 +556,20 @@
                         </a>
                     </div>
                     <!--Tasks List 13-->
-                    <div class=" col-md-4 col-sm-12  grid-item     business " data-category="business">
+                    <div class=" col-md-4 col-sm-12  grid-item     fintech " data-category="fintech">
                         <a data-toggle="modal" data-target="#exampleModal-13">
                             <img alt="airbnb-app-directory" src="assets/img/Portfolio/tasks-list-home.png" width="500"
                                 height="500">
                         </a>
                     </div>
+                    <!--Souqi 14-->
+                    <div class=" col-md-4 col-sm-12  grid-item     ecommerce " data-category="ecommerce">
+                        <a data-toggle="modal" data-target="#exampleModal-14">
+                            <img alt="airbnb-app-directory" src="assets/img/Portfolio/Souqi.png" width="500"
+                                height="500">
+                        </a>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -588,7 +604,7 @@
             </div>
         </div>
     </section> -->
-
+    
     <!---Footer-->
     <footer>
         <div class="container-fluid">
@@ -624,347 +640,384 @@
         </div>
     </footer>
 
-    <button class="hire btn btn-info" data-toggle="modal" data-target="#exampleModal">Hire me</button>
-    <!-- Modal -->
+    <div class="Modal">
+        <!-- Modal -->
 
-    <!-- Hire socials -->
-    <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-lg ">
-            <div class="modal-content ">
-                <div class="modal-header ">
-                    <h5 class="modal-title text-center col-xl-11 ">Feel free to contact me:</h5>
-                    <button type="button" class="close col-xl-1" data-dismiss="modal" aria-label="close col-xl-1">
-                        <span aria-hidden="true">×</span>
-                    </button>
+        <!-- Hire socials -->
+        <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-lg ">
+                <div class="modal-content ">
+                    <div class="modal-header ">
+                        <h5 class="modal-title text-center col-xl-11 ">Feel free to contact me:</h5>
+                        <button type="button" class="close col-xl-1" data-dismiss="modal" aria-label="close col-xl-1">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+
+
+
+                    <div class="modal-body">
+                        <ul class="list-unstyled">
+
+                            <!-- Email -->
+                            <li class="socials_hire col-sm-12">
+                                <a class="a_go" target="_blank" href="mailto:mahmoud11magd@gmail.com">
+                                    <b><i class="mr-2 fa fa-envelope i_icone" aria-hidden="true"></i>Email Address: </b>
+                                    mahmoud11magd@gmail.com</a>
+                            </li>
+
+                            <!-- Whatsapp -->
+                            <li class="socials_hire col-sm-12">
+                                <a class="a_go" target="_blank" href="https://wa.me/201158741215?text=">
+                                    <b><i class="mr-2 fa fa-whatsapp i_icone" aria-hidden="true"></i>Whatsapp: </b>
+                                    +20 115 874 1215
+                                </a>
+                            </li>
+
+                            <!-- Phone -->
+                            <li class="socials_hire col-sm-12">
+                                <a class="a_go" target="_blank" href="tel:01158741215">
+                                    <b><i class="mr-2 fa fa-phone i_icone" aria-hidden="true"></i>Phone: </b>
+                                    +20 115 874 121 5</a>
+                            </li>
+
+                            <!-- Telegram -->
+                            <li class="socials_hire col-sm-12">
+                                <a class="a_go" target="_blank" href="https://t.me/MahmoudMohamed_AbdElmaged">
+                                    <b><i class="mr-2 fa fa-telegram i_icone" aria-hidden="true"></i>Telegram: </b>
+                                    +20 115 874 121 5</a>
+                            </li>
+                        </ul>
+                    </div><!--/modal-body-->
                 </div>
-
-
-
-                <div class="modal-body">
-                    <ul class="list-unstyled">
-
-                        <!-- Email -->
-                        <li class="socials_hire col-sm-12">
-                            <a class="a_go" target="_blank" href="mailto:mahmoud11magd@gmail.com">
-                                <b><i class="mr-2 fa fa-envelope i_icone" aria-hidden="true"></i>Email Address: </b>
-                                mahmoud11magd@gmail.com</a>
-                        </li>
-
-                        <!-- Whatsapp -->
-                        <li class="socials_hire col-sm-12">
-                            <a class="a_go" target="_blank" href="https://wa.me/201158741215?text=">
-                                <b><i class="mr-2 fa fa-whatsapp i_icone" aria-hidden="true"></i>Whatsapp: </b>
-                                +20 115 874 1215
-                            </a>
-                        </li>
-
-                        <!-- Phone -->
-                        <li class="socials_hire col-sm-12">
-                            <a class="a_go" target="_blank" href="tel:01158741215">
-                                <b><i class="mr-2 fa fa-phone i_icone" aria-hidden="true"></i>Phone: </b>
-                                +20 115 874 121 5</a>
-                        </li>
-
-                        <!-- Telegram -->
-                        <li class="socials_hire col-sm-12">
-                            <a class="a_go" target="_blank" href="https://t.me/MahmoudMohamed_AbdElmaged">
-                                <b><i class="mr-2 fa fa-telegram i_icone" aria-hidden="true"></i>Telegram: </b>
-                                +20 115 874 121 5</a>
-                        </li>
-                    </ul>
-                </div><!--/modal-body-->
             </div>
+
         </div>
 
-    </div>
 
+        <!--Resume-->
 
-    <!--Resume-->
-    <div class="modal fade " id="resume" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header hvr-underline-from-right  js-scroll-trigger">
-                    <h5 class="modal-title  text-center col-xl-11"><a class="CV-modal  
+        <div class="modal fade " id="resume" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header hvr-underline-from-right  js-scroll-trigger">
+                        <h5 class="modal-title  text-center col-xl-11"><a class="CV-modal  
                         " href="assets/Mahmoud_Mohammed.pdf" download="Mahmoud_Mohammed">Download Resume</a></h5>
 
-                    <button type="button" class="close col-xl-1 " data-dismiss="modal" aria-label="close col-xl-1">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                </div>
-                <div class="modal-body mfp-container popup">
+                        <button type="button" class="close col-xl-1 " data-dismiss="modal" aria-label="close col-xl-1">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body mfp-container popup">
 
-                    <img class="img-modal" src="assets/img/resume/resume.jpg" alt="resume.png">
-                    <img class="img-modal" src="assets/img/resume/resume2.jpg" alt="resume2.png">
+                        <img class="img-modal" src="assets/img/resume/resume.jpg" alt="resume.png">
+                        <img class="img-modal" src="assets/img/resume/resume2.jpg" alt="resume2.png">
 
-                </div> <!--/modal-body-->
+                    </div> <!--/modal-body-->
+                </div>
             </div>
         </div>
-    </div>
 
-    <!--1 webhosting-->
-    <div class="modal fade " id="exampleModal-1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title  text-center col-xl-11">Web Hosting</h5>
-                    <button type="button" class="close col-xl-1 " data-dismiss="modal" aria-label="close col-xl-1">
-                        <span aria-hidden="true">×</span>
-                    </button>
+        <!--1 webhosting-->
+        <div class="modal fade " id="exampleModal-1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title  text-center col-xl-11">Web Hosting</h5>
+                        <button type="button" class="close col-xl-1 " data-dismiss="modal" aria-label="close col-xl-1">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body mfp-container popup">
+                        <img class="img-modal" src="assets/img/Portfolio/work/webhostingView.png" alt="webhostingView">
+                    </div> <!--/modal-body-->
                 </div>
-                <div class="modal-body mfp-container popup">
-                    <img class="img-modal" src="assets/img/Portfolio/work/webhostingView.png" alt="webhostingView">
-                </div> <!--/modal-body-->
             </div>
         </div>
-    </div>
-    <!--2 wadiElNile-->
-    <div class="modal fade " id="exampleModal-2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title text-center col-xl-11 ">Wadi El Nile</h5>
-                    <button type="button" class="close col-xl-1" data-dismiss="modal" aria-label="close col-xl-1">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                </div>
-                <div class="modal-body mfp-container popup">
-                    <img class="img-modal" src="assets/img/Portfolio/work/wadiElNileView.png" alt="wadiElNileView">
-                </div><!--/modal-body-->
-            </div>
-        </div>
-    </div>
-    <!--3 FreshShop-->
-    <div class="modal fade " id="exampleModal-3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title text-center col-xl-11 ">FreshShop</h5>
-                    <button type="button" class="close col-xl-1" data-dismiss="modal" aria-label="close col-xl-1">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                </div>
-                <div class="modal-body mfp-container popup">
-                    <img class="img-modal" src="assets/img/Portfolio/work/freshshop/freshshop.png" alt="freshshop">
 
-                    <img class="img-modal" src="assets/img/Portfolio/work/freshshop/freshshop2.png" alt="freshshop2">
-                </div><!--/modal-body-->
+        <!--2 wadiElNile-->
+        <div class="modal fade " id="exampleModal-2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-center col-xl-11 ">Wadi El Nile</h5>
+                        <button type="button" class="close col-xl-1" data-dismiss="modal" aria-label="close col-xl-1">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body mfp-container popup">
+                        <img class="img-modal" src="assets/img/Portfolio/work/wadiElNileView.png" alt="wadiElNileView">
+                    </div><!--/modal-body-->
+                </div>
             </div>
         </div>
-    </div>
-    <!--4 payShipping-->
-    <div class="modal fade " id="exampleModal-4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title text-center col-xl-11 ">payShipping</h5>
-                    <button type="button" class="close col-xl-1" data-dismiss="modal" aria-label="close col-xl-1">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                </div>
-                <div class="modal-body mfp-container popup">
-                    <img class="img-modal" src="assets/img/Portfolio/work/payShipping/payShipping.png"
-                        alt="payShipping">
-                    <img class="img-modal" src="assets/img/Portfolio/work/payShipping/payShipping2.png"
-                        alt="payShipping2">
-                </div><!--/modal-body-->
-            </div>
-        </div>
-    </div>
-    <!--5 Prosthetics-->
-    <div class="modal fade " id="exampleModal-5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title text-center col-xl-11 ">Prosthetics Eauipments</h5>
-                    <button type="button" class="close col-xl-1" data-dismiss="modal"
-                        aria-label="close________ col-xl-1">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                </div>
-                <div class="modal-body mfp-container popup">
-                    <img class="img-modal" src="assets/img/Portfolio/work/Prosthetics/Prosthetics.png"
-                        alt="Prosthetics">
-                    <img class="img-modal" src="assets/img/Portfolio/work/Prosthetics/3.png" alt="Prosthetics3">
-                    <img class="img-modal" src="assets/img/Portfolio/work/Prosthetics/4.png" alt="Prosthetics4">
 
-                </div><!--/modal-body-->
-            </div>
-        </div>
-    </div>
-    <!--6 Garden Rahman-->
-    <div class="modal fade " id="exampleModal-6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title text-center col-xl-11 ">Garden Rahman</h5>
-                    <button type="button" class="close col-xl-1" data-dismiss="modal" aria-label="close col-xl-1">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                </div>
-                <div class="modal-body mfp-container popup">
-                    <img class="img-modal" src="assets/img/Portfolio/work/GardenRahmanView.png" alt="GardenRahmanView">
-                </div><!--/modal-body-->
-            </div>
-        </div>
-    </div>
-    <!--7 CarShopping-->
-    <div class="modal fade " id="exampleModal-7" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title text-center col-xl-11 ">CarShopping</h5>
-                    <button type="button" class="close col-xl-1" data-dismiss="modal" aria-label="close col-xl-1">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                </div>
-                <div class="modal-body mfp-container popup">
-                    <img class="img-modal" src="assets/img/Portfolio/work/CarShopping/CarShopping.png"
-                        alt="CarShopping">
-                    <img class="img-modal" src="assets/img/Portfolio/work/CarShopping/CarShopping1.png"
-                        alt="CarShopping1">
-                </div><!--/modal-body-->
-            </div>
-        </div>
-    </div>
-    <!--8 dashboard-->
-    <div class="modal fade " id="exampleModal-8" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title text-center col-xl-11 ">Dashboard</h5>
-                    <button type="button" class="close col-xl-1" data-dismiss="modal" aria-label="close col-xl-1">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                </div>
-                <div class="modal-body mfp-container popup">
-                    <img class="img-modal" src="assets/img/Portfolio/dashboardEn.png" alt="dashboardEn">
-                    <img class="img-modal" src="assets/img/Portfolio/dashboardAr.png" alt="dashboardAr">
-                </div><!--/modal-body-->
-            </div>
-        </div>
-    </div>
-    <!--9 Estefandi-->
-    <div class="modal fade " id="exampleModal-9" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title text-center col-xl-11 ">Estefandi</h5>
-                    <button type="button" class="close col-xl-1" data-dismiss="modal" aria-label="close col-xl-1">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                </div>
-                <div class="modal-body mfp-container popup">
-                    <img class="img-modal" src="assets/img/Portfolio/work/EstefandiView.png" alt="EstefandiView">
-                </div><!--/modal-body-->
-            </div>
-        </div>
-    </div>
-    <!--10 New Look-->
-    <div class="modal fade " id="exampleModal-10" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title text-center col-xl-11 ">New Look</h5>
-                    <button type="button" class="close col-xl-1" data-dismiss="modal" aria-label="close col-xl-1">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                </div>
-                <div class="modal-body mfp-container popup">
-                    <img class="img-modal" src="assets/img/Portfolio/work/New Look/New Look.png" alt="New Look">
-                    <img class="img-modal" src="assets/img/Portfolio/work/New Look/Contacts.png" alt="Contacts">
-                </div><!--/modal-body-->
-            </div>
-        </div>
-    </div>
-    <!--11 Airbnb-App-Directory-->
-    <div class="modal fade " id="exampleModal-11" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <a href="https://airbnb-app-directory.vercel.app/" target="_blank" class="col-xl-11">
-                        <h5 class="modal-title text-center  ">Airbnb-App-Directory <i class="fa fa-link"></i></h5>
-                    </a>
-                    <button type="button" class="close col-xl-1" data-dismiss="modal" aria-label="close col-xl-1">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                </div>
-                <div class="modal-body mfp-container popup">
-                    <a href="https://airbnb-app-directory.vercel.app/" target="_blank">
-                        <img class="img-modal" src="assets/img/Portfolio/work/Airbnb/airbnb-app-directory-1.png"
-                            alt="airbnb-app-directory">
-                        <img class="img-modal" src="assets/img/Portfolio/work/Airbnb/airbnb-app-directory-2.png"
-                            alt="airbnb-app-directory">
-                    </a>
-                </div><!--/modal-body-->
-            </div>
-        </div>
-    </div>
+        <!--3 FreshShop-->
+        <div class="modal fade " id="exampleModal-3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-center col-xl-11 ">FreshShop</h5>
+                        <button type="button" class="close col-xl-1" data-dismiss="modal" aria-label="close col-xl-1">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body mfp-container popup">
+                        <img class="img-modal" src="assets/img/Portfolio/work/freshshop/freshshop.png" alt="freshshop">
 
-    <!--12 Cloud Hosting-->
-    <div class="modal fade " id="exampleModal-12" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <a href="https://cloud-hosting.vercel.app/" target="_blank" class="col-xl-11">
-                        <h5 class="modal-title text-center col-xl-11 ">Cloud Hosting <i class="fa fa-link"></i></h5>
-                    </a>
-                    <button type="button" class="close col-xl-1" data-dismiss="modal" aria-label="close col-xl-1">
-                        <span aria-hidden="true">×</span>
-                    </button>
+                        <img class="img-modal" src="assets/img/Portfolio/work/freshshop/freshshop2.png"
+                            alt="freshshop2">
+                    </div><!--/modal-body-->
                 </div>
-                <div class="modal-body mfp-container popup">
-                    <a href="https://cloud-hosting.vercel.app/" target="_blank">
-                        <img class="img-modal" src="assets/img/Portfolio/work/CloudHosting/cloud-hosting-home.png"
-                            alt="cloud-hosting-home">
-                        <img class="img-modal"
-                            src="assets/img/Portfolio/work/CloudHosting/cloud-hosting-home-no-admin.png"
-                            alt="cloud-hosting-home">
-                        <img class="img-modal" src="assets/img/Portfolio/work/CloudHosting/cloud-hosting-article.png"
-                            alt="cloud-hosting-article">
-                        <img class="img-modal" src="assets/img/Portfolio/work/CloudHosting/cloud-hosting-admin.png"
-                            alt="cloud-hosting-admin">
-                        <img class="img-modal" src="assets/img/Portfolio/work/CloudHosting/cloud-hosting-commant.png"
-                            alt="cloud-hosting-commant">
-
-                    </a>
-                </div><!--/modal-body-->
             </div>
         </div>
-    </div>
-    <!--13 Tasks List-->
-    <div class="modal fade " id="exampleModal-13" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <a href="https://tasks-list-project.vercel.app/" target="_blank" class="col-xl-11">
 
-                        <h5 class="modal-title text-center  ">Tasks List <i class="fa fa-link"></i></h5>
-                    </a>
-                    <button type="button" class="close col-xl-1" data-dismiss="modal" aria-label="close col-xl-1">
-                        <span aria-hidden="true">×</span>
-                    </button>
+        <!--4 payShipping-->
+        <div class="modal fade " id="exampleModal-4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-center col-xl-11 ">payShipping</h5>
+                        <button type="button" class="close col-xl-1" data-dismiss="modal" aria-label="close col-xl-1">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body mfp-container popup">
+                        <img class="img-modal" src="assets/img/Portfolio/work/payShipping/payShipping.png"
+                            alt="payShipping">
+                        <img class="img-modal" src="assets/img/Portfolio/work/payShipping/payShipping2.png"
+                            alt="payShipping2">
+                    </div><!--/modal-body-->
                 </div>
-                <div class="modal-body mfp-container popup" " >
+            </div>
+        </div>
+
+        <!--5 Prosthetics-->
+        <div class="modal fade " id="exampleModal-5" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-center col-xl-11 ">Prosthetics Eauipments</h5>
+                        <button type="button" class="close col-xl-1" data-dismiss="modal"
+                            aria-label="close________ col-xl-1">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body mfp-container popup">
+                        <img class="img-modal" src="assets/img/Portfolio/work/Prosthetics/Prosthetics.png"
+                            alt="Prosthetics">
+                        <img class="img-modal" src="assets/img/Portfolio/work/Prosthetics/3.png" alt="Prosthetics3">
+                        <img class="img-modal" src="assets/img/Portfolio/work/Prosthetics/4.png" alt="Prosthetics4">
+
+                    </div><!--/modal-body-->
+                </div>
+            </div>
+        </div>
+
+        <!--6 Garden Rahman-->
+        <div class="modal fade " id="exampleModal-6" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-center col-xl-11 ">Garden Rahman</h5>
+                        <button type="button" class="close col-xl-1" data-dismiss="modal" aria-label="close col-xl-1">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body mfp-container popup">
+                        <img class="img-modal" src="assets/img/Portfolio/work/GardenRahmanView.png"
+                            alt="GardenRahmanView">
+                    </div><!--/modal-body-->
+                </div>
+            </div>
+        </div>
+
+        <!--7 CarShopping-->
+        <div class="modal fade " id="exampleModal-7" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-center col-xl-11 ">CarShopping</h5>
+                        <button type="button" class="close col-xl-1" data-dismiss="modal" aria-label="close col-xl-1">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body mfp-container popup">
+                        <img class="img-modal" src="assets/img/Portfolio/work/CarShopping/CarShopping.png"
+                            alt="CarShopping">
+                        <img class="img-modal" src="assets/img/Portfolio/work/CarShopping/CarShopping1.png"
+                            alt="CarShopping1">
+                    </div><!--/modal-body-->
+                </div>
+            </div>
+        </div>
+
+        <!--8 dashboard-->
+        <div class="modal fade " id="exampleModal-8" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-center col-xl-11 ">Dashboard</h5>
+                        <button type="button" class="close col-xl-1" data-dismiss="modal" aria-label="close col-xl-1">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body mfp-container popup">
+                        <img class="img-modal" src="assets/img/Portfolio/dashboardEn.png" alt="dashboardEn">
+                        <img class="img-modal" src="assets/img/Portfolio/dashboardAr.png" alt="dashboardAr">
+                    </div><!--/modal-body-->
+                </div>
+            </div>
+        </div>
+
+        <!--9 Estefandi-->
+        <div class="modal fade " id="exampleModal-9" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-center col-xl-11 ">Estefandi</h5>
+                        <button type="button" class="close col-xl-1" data-dismiss="modal" aria-label="close col-xl-1">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body mfp-container popup">
+                        <img class="img-modal" src="assets/img/Portfolio/work/EstefandiView.png" alt="EstefandiView">
+                    </div><!--/modal-body-->
+                </div>
+            </div>
+        </div>
+
+        <!--10 New Look-->
+        <div class="modal fade " id="exampleModal-10" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-center col-xl-11 ">New Look</h5>
+                        <button type="button" class="close col-xl-1" data-dismiss="modal" aria-label="close col-xl-1">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body mfp-container popup">
+                        <img class="img-modal" src="assets/img/Portfolio/work/New Look/New Look.png" alt="New Look">
+                        <img class="img-modal" src="assets/img/Portfolio/work/New Look/Contacts.png" alt="Contacts">
+                    </div><!--/modal-body-->
+                </div>
+            </div>
+        </div>
+        <!--11 Airbnb-App-Directory-->
+        <div class="modal fade " id="exampleModal-11" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <a href="https://airbnb-app-directory.vercel.app/" target="_blank" class="col-xl-11">
+                            <h5 class="modal-title text-center  ">Airbnb-App-Directory <i class="fa fa-link"></i></h5>
+                        </a>
+                        <button type="button" class="close col-xl-1" data-dismiss="modal" aria-label="close col-xl-1">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body mfp-container popup">
+                        <a href="https://airbnb-app-directory.vercel.app/" target="_blank">
+                            <img class="img-modal" src="assets/img/Portfolio/work/Airbnb/airbnb-app-directory-1.png"
+                                alt="airbnb-app-directory">
+                            <img class="img-modal" src="assets/img/Portfolio/work/Airbnb/airbnb-app-directory-2.png"
+                                alt="airbnb-app-directory">
+                        </a>
+                    </div><!--/modal-body-->
+                </div>
+            </div>
+        </div>
+
+        <!--12 Cloud Hosting-->
+        <div class="modal fade " id="exampleModal-12" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <a href="https://cloud-hosting.vercel.app/" target="_blank" class="col-xl-11">
+                            <h5 class="modal-title text-center col-xl-11 ">Cloud Hosting <i class="fa fa-link"></i></h5>
+                        </a>
+                        <button type="button" class="close col-xl-1" data-dismiss="modal" aria-label="close col-xl-1">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body mfp-container popup">
+                        <a href="https://cloud-hosting.vercel.app/" target="_blank">
+                            <img class="img-modal" src="assets/img/Portfolio/work/CloudHosting/cloud-hosting-home.png"
+                                alt="cloud-hosting-home">
+                            <img class="img-modal"
+                                src="assets/img/Portfolio/work/CloudHosting/cloud-hosting-home-no-admin.png"
+                                alt="cloud-hosting-home">
+                            <img class="img-modal"
+                                src="assets/img/Portfolio/work/CloudHosting/cloud-hosting-article.png"
+                                alt="cloud-hosting-article">
+                            <img class="img-modal" src="assets/img/Portfolio/work/CloudHosting/cloud-hosting-admin.png"
+                                alt="cloud-hosting-admin">
+                            <img class="img-modal"
+                                src="assets/img/Portfolio/work/CloudHosting/cloud-hosting-commant.png"
+                                alt="cloud-hosting-commant">
+
+                        </a>
+                    </div><!--/modal-body-->
+                </div>
+            </div>
+        </div>
+
+        <!--13 Tasks List-->
+        <div class="modal fade " id="exampleModal-13" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <a href="https://tasks-list-project.vercel.app/" target="_blank" class="col-xl-11">
+
+                            <h5 class="modal-title text-center  ">Tasks List <i class="fa fa-link"></i></h5>
+                        </a>
+                        <button type="button" class="close col-xl-1" data-dismiss="modal" aria-label="close col-xl-1">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body mfp-container popup" " >
                         <a href=" https://tasks-list-project.vercel.app/" target="_blank">
-                    <img class="img-modal" src="assets/img/Portfolio/work/TasksList/tasks-list-home.png"
-                        alt="tasks-list-home">
-                    <img class="img-modal" src="assets/img/Portfolio/work/TasksList/tasks-list-add-your-task.png"
-                        alt="tasks-list-add-your-task">
-                    <img class="img-modal" src="assets/img/Portfolio/work/TasksList/tasks-list-details.png"
-                        alt="tasks-list-details">
-                    <img class="img-modal" src="assets/img/Portfolio/work/TasksList/tasks-list-edit.png"
-                        alt="atasks-list-edit">
+                        <img class="img-modal" src="assets/img/Portfolio/work/TasksList/tasks-list-home.png"
+                            alt="tasks-list-home">
+                        <img class="img-modal" src="assets/img/Portfolio/work/TasksList/tasks-list-add-your-task.png"
+                            alt="tasks-list-add-your-task">
+                        <img class="img-modal" src="assets/img/Portfolio/work/TasksList/tasks-list-details.png"
+                            alt="tasks-list-details">
+                        <img class="img-modal" src="assets/img/Portfolio/work/TasksList/tasks-list-edit.png"
+                            alt="atasks-list-edit">
 
-                    </a>
-                </div><!--/modal-body-->
+                        </a>
+                    </div><!--/modal-body-->
+                </div>
             </div>
         </div>
+
+        <!--14 Souqi-->
+        <div class="modal fade " id="exampleModal-14" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <a href="https://e-commerce-cyan-tau.vercel.app/" target="_blank" class="col-xl-11">
+
+                            <h5 class="modal-title text-center  "> Souqi <i class="fa fa-link"></i></h5>
+                        </a>
+                        <button type="button" class="close col-xl-1" data-dismiss="modal" aria-label="close col-xl-1">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body mfp-container popup" " >
+                        <a href=" https://e-commerce-cyan-tau.vercel.app/" target="_blank">
+                        <img class="img-modal" src="assets/img/Portfolio/work/Souqi/Souqi-1.png" alt="Souqi">
+                        <img class="img-modal" src="assets/img/Portfolio/work/Souqi/Souqi-2.png" alt="Souqi-Ar">
+                        </a>
+                    </div><!--/modal-body-->
+                </div>
+            </div>
+        </div>
+
     </div>
 
-
-
-    <!-- jQuery,js,Bootstrap JS -->
-
+    <!-- jQuery,js,Bootstrap -->
     <script src="assets/js/bootstrap.js"></script>
     <script src="assets/js/jquery.min.js"></script>
 

@@ -298,4 +298,9 @@ body {
 .imgSkills {
   display: block;
   margin: auto;
+}
+
+.Modal {
+  width: 0;
+  height: 0;
 }/*# sourceMappingURL=staylemahmoud.css.map */

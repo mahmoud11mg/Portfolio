@@ -228,9 +228,9 @@ body {
 
 .copyright {
   font-size: 20px;
-
+color: white !important;
   span {
-    color: beige;
+    color: $mainColor !important;
   }
 }
 

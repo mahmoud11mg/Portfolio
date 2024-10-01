@@ -254,9 +254,10 @@ body {
 
 .copyright {
   font-size: 20px;
+  color: white !important;
 }
 .copyright span {
-  color: beige;
+  color: #55c550 !important;
 }
 
 .hvr-underline-from-right:before {

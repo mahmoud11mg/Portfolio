@@ -78,7 +78,7 @@
   bottom: -190px;
 }
 .me .about p {
-  font-size: 20px;
+  font-size: 20px !important;
 }
 .me .my-img {
   width: 50%;
@@ -113,9 +113,20 @@ footer .copyright {
   header {
     padding: 50px 0;
   }
-  .navbar, .footer, .me {
+  .navbar,
+  .footer,
+  .me {
     margin: 0;
     padding: 0;
+    margin-top: -350px !important;
+    margin-left: -15px !important;
+  }
+  .navbar .about,
+  .footer .about,
+  .me .about {
+    position: relative !important;
+    left: 5px !important;
+    bottom: -65px !important;
   }
   .navbar {
     height: 5%;
@@ -130,11 +141,12 @@ footer .copyright {
     align-items: center;
   }
   .me .about {
-    width: 80%;
-    left: -10px;
-    bottom: -100px;
+    width: 80% !important;
   }
-  .me .about p {
+  .me .about .about h1 {
+    font-size: 40px !important;
+  }
+  .me .about .about p {
     font-size: 16px;
   }
   .me .my-img {
@@ -155,14 +167,14 @@ footer .copyright {
   .me {
     width: 50%;
   }
-  .me .about {
-    width: 50%;
+  .me .about h1 {
+    font-size: 40px !important;
   }
   .me .my-img {
     width: 50%;
     position: relative;
     top: 250px;
-    right: 300px !important;
+    right: 480px !important;
     max-width: 280px;
   }
 }
@@ -171,10 +183,16 @@ footer .copyright {
     max-width: 960px;
   }
   .me {
-    width: 50%;
+    width: 50% !important;
   }
   .me .about {
-    width: 90%;
+    width: 150% !important;
+    position: relative !important;
+    left: 125px !important;
+    bottom: -50px !important;
+  }
+  .me .about h1 {
+    font-size: 40px !important;
   }
   .me .my-img {
     width: 50%;
@@ -196,7 +214,7 @@ footer .copyright {
     width: 50%;
   }
   .me .about {
-    width: 90%;
+    width: 90% !important;
   }
   .me .about h1 {
     font-size: 40px !important;
@@ -204,33 +222,40 @@ footer .copyright {
   .me .my-img {
     width: 50%;
     position: relative;
-    top: 250px;
-    right: 660px;
+    top: 265px;
+    right: 510px;
     max-width: 280px;
   }
 }
 @media print and (min-width: 1200px) {
-  *, *::before, *::after {
+  *,
+  *::before,
+  *::after {
     text-shadow: none;
     box-shadow: none;
   }
   a:not(.btn) {
     text-decoration: underline;
   }
-  tr, img {
+  tr,
+  img {
     page-break-inside: avoid;
   }
-  p, h2, h3 {
+  p,
+  h2,
+  h3 {
     orphans: 3;
     widows: 3;
   }
-  h2, h3 {
+  h2,
+  h3 {
     page-break-after: avoid;
   }
   @page {
     size: a3;
   }
-  body, .container {
+  body,
+  .container {
     min-width: 992px;
   }
   .navbar {

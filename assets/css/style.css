@@ -720,13 +720,14 @@ header .bg {
   -webkit-align-items: center;
   position: relative;
   z-index: 1;
-  margin-top: -100px;
+  margin-top: -400px;
+  margin-left: 200px;
 }
 .me .about {
-  width: 50%;
+  width: 60%;
   position: relative;
-  left: -10px;
-  bottom: -55px;
+  left: -85px;
+  bottom: -129px;
 }
 .me .about p {
   font-size: 20px;

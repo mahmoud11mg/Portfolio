@@ -57,6 +57,11 @@
                             <a class="CV nav-link  hvr-underline-from-right  js-scroll-trigger " 
                             data-toggle="modal" data-target="#exampleModal">Hire me</a>
                         </li>
+                        <li class="nav-item">
+                            <a  class="nav-link "> <i class="fa fa-eye"></i><span id="visitor-count"> 0</span></a>
+                            
+                            
+                        </li>
 
                         <li style=" margin-top: -17px;" class="js-scroll-trigger">
 
@@ -101,6 +106,7 @@
 
     <!---testimonials-->
     <section class="border-top testimonials" id="testimonials">
+      
         <div class="container">
             <div class="row">
                 <div class="col-md-6 Testimo ">
@@ -193,6 +199,7 @@
                     </div>
                 </div>
             </div>
+            
         </div>
     </section>
 
@@ -454,7 +461,9 @@
     
     <!---Footer-->
     <footer>
+
         <div class="container-fluid">
+            
             <div class="d-flex align-items-center justify-content-between ">
                 <div class="left">
                     <h6>Follow me :</h6>
@@ -477,13 +486,14 @@
                                     class="i_icone" src="assets/img/packgr&Logo/wuzzuf.ico" width="30" height="30"
                                     alt=""></a></li>
                     </ul>
+
                 </div>
             </div>
 
         </div>
+        
         <div class=" text-center">
-
-            <p class="copyright"> Copyright ©2024 <span>Portfolio</span></p>
+          <p class="copyright"> Copyright ©2024 <span>Portfolio</span></p>
         </div>
     </footer>
 
@@ -871,6 +881,41 @@
     <script src="assets/js/Style.js"></script>
     <script src="assets/js/style-mahmoud.js"></script>
 
+    <script>
+        // Retrieve the current count from localStorage or initialize to 0
+        let visitorCount  = localStorage.getItem('visitorCount') || 0;
+
+        // Check if the user has already visited (using a custom flag 'hasVisited')
+        let hasVisited = localStorage.getItem('hasVisited');
+
+        if (!hasVisited) {
+            // If this is the first visit, increment the visitor count
+            visitorCount++;
+            
+            // Update the visitor count in localStorage
+            localStorage.setItem('visitorCount', visitorCount);
+
+            // Mark this device as having visited
+            localStorage.setItem('hasVisited', 'true');
+        }
+
+        // Display the visitor count
+        document.getElementById('visitor-count').innerText =visitorCount ;
+    </script>
+
+    <!-- <script>
+        // Retrieve the current count from localStorage or initialize to 0
+        let visitorCount = localStorage.getItem('visitorCount') || 0;
+
+        // Increment the count for every page visit
+        visitorCount++;
+
+        // Update the visitor count in localStorage
+        localStorage.setItem('visitorCount', visitorCount);
+
+        // Display the updated visitor count in the HTML
+        document.getElementById('visitor-count').innerText = visitorCount;
+    </script> -->
 </body>
 
 </html>

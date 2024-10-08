@@ -883,15 +883,15 @@
     <script>
         // Check if the user has visited before
         if (!localStorage.getItem('hasVisited')) {
+            // If not visited, increment the count and mark as visited
             let visitorCount = localStorage.getItem('visitorCount') || 0;
             visitorCount++;
             localStorage.setItem('visitorCount', visitorCount);
-            localStorage.setItem('hasVisited', 'true'); // Mark as visited
+            localStorage.setItem('hasVisited', 'true'); // Mark this device as visited
         }
 
         // Display the visitor count
         document.getElementById('visitor-count').innerText = localStorage.getItem('visitorCount');
-   
     </script>
 
 

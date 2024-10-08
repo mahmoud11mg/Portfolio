@@ -880,42 +880,21 @@
 
     <script src="assets/js/Style.js"></script>
     <script src="assets/js/style-mahmoud.js"></script>
-
     <script>
-        // Retrieve the current count from localStorage or initialize to 0
-        let visitorCount  = localStorage.getItem('visitorCount') || 0;
-
-        // Check if the user has already visited (using a custom flag 'hasVisited')
-        let hasVisited = localStorage.getItem('hasVisited');
-
-        if (!hasVisited) {
-            // If this is the first visit, increment the visitor count
+        // Check if the user has visited before
+        if (!localStorage.getItem('hasVisited')) {
+            let visitorCount = localStorage.getItem('visitorCount') || 0;
             visitorCount++;
-            
-            // Update the visitor count in localStorage
             localStorage.setItem('visitorCount', visitorCount);
-
-            // Mark this device as having visited
-            localStorage.setItem('hasVisited', 'true');
+            localStorage.setItem('hasVisited', 'true'); // Mark as visited
         }
 
         // Display the visitor count
-        document.getElementById('visitor-count').innerText =visitorCount ;
+        document.getElementById('visitor-count').innerText = localStorage.getItem('visitorCount');
+   
     </script>
 
-    <!-- <script>
-        // Retrieve the current count from localStorage or initialize to 0
-        let visitorCount = localStorage.getItem('visitorCount') || 0;
 
-        // Increment the count for every page visit
-        visitorCount++;
-
-        // Update the visitor count in localStorage
-        localStorage.setItem('visitorCount', visitorCount);
-
-        // Display the updated visitor count in the HTML
-        document.getElementById('visitor-count').innerText = visitorCount;
-    </script> -->
 </body>
 
 </html>

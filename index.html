@@ -492,9 +492,14 @@
 
         </div>
         
-        <div class=" text-center">
-          <p class="copyright"> Copyright ©2024 <span>Portfolio</span></p>
+            <div class="text-center">
+        <p class="copyright">
+            Copyright ©<span id="year"></span> <span class="spanportfolio">Portfolio</span>
+        </p>
         </div>
+
+
+
     </footer>
 
     <div class="Modal">
@@ -520,14 +525,14 @@
                             <li class="socials_hire col-sm-12">
                                 <a class="a_go" target="_blank" href="mailto:mahmoud11magd@gmail.com">
                                     <b><i class="mr-2 fa fa-envelope i_icone" aria-hidden="true"></i>Email Address: </b>
-                                    mahmoud11magd@gmail.com</a>
+                                     mahmoud11magd@gmail.com</a>
                             </li>
 
                             <!-- Whatsapp -->
                             <li class="socials_hire col-sm-12">
                                 <a class="a_go" target="_blank" href="https://wa.me/201158741215?text=">
                                     <b><i class="mr-2 fa fa-whatsapp i_icone" aria-hidden="true"></i>Whatsapp: </b>
-                                    +20 115 874 1215
+                                     +20 115 874 1215
                                 </a>
                             </li>
 
@@ -535,14 +540,14 @@
                             <li class="socials_hire col-sm-12">
                                 <a class="a_go" target="_blank" href="tel:01158741215">
                                     <b><i class="mr-2 fa fa-phone i_icone" aria-hidden="true"></i>Phone: </b>
-                                    +20 115 874 121 5</a>
+                                     +20 115 874 121 5</a>
                             </li>
 
                             <!-- Telegram -->
                             <li class="socials_hire col-sm-12">
                                 <a class="a_go" target="_blank" href="https://t.me/MahmoudMohamed_AbdElmaged">
                                     <b><i class="mr-2 fa fa-telegram i_icone" aria-hidden="true"></i>Telegram: </b>
-                                    +20 115 874 121 5</a>
+                                     +20 115 874 121 5</a>
                             </li>
                         </ul>
                     </div><!--/modal-body-->
@@ -880,6 +885,10 @@
 
     <script src="assets/js/Style.js"></script>
     <script src="assets/js/style-mahmoud.js"></script>
+
+    <script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
     <!-- <script>
         // Retrieve the current count from localStorage or initialize to 0

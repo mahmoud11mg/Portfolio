@@ -111,7 +111,7 @@ body {
 
   .hvr-sweep-to-right {
     &:before {
-      background: $mainColor !important;
+      background: $mainColorless !important;
     }
 
     &:active,
@@ -133,6 +133,13 @@ body {
       0 17px 50px 0 rgba(0, 0, 0, 0.563);
     @include boRadius(8px);
   }
+
+  .hvr-sweep-to-right:active,
+  .hvr-sweep-to-right:hover,
+  .hvr-sweep-to-right:focus {
+    color: $mainColortext !important;
+  }
+
 }
 
 .fa-moon-o {
@@ -229,8 +236,9 @@ body {
 
 .copyright {
   font-size: 20px;
-color: white !important;
-  span {
+  color: white !important;
+
+  .spanportfolio {
     color: $mainColor !important;
   }
 }
@@ -288,5 +296,14 @@ color: white !important;
   width: 0;
   height: 0;
 }
-//Modal
 
+//Modal
+.fa-phone {
+  transform: rotate(140deg);
+  -webkit-transform: rotate(140deg);
+  -moz-transform: rotate(140deg);
+  -ms-transform: rotate(140deg);
+  -o-transform: rotate(140deg);
+}
+
+//

@@ -32,7 +32,7 @@
 }
 
 .navbar {
-  height: 9%;
+  height: 11%;
   width: 100% !important;
   background-color: #06223d;
   z-index: 9999;
@@ -125,7 +125,7 @@ footer .copyright {
     bottom: -65px !important;
   }
   .navbar {
-    height: 5%;
+    height: 7%;
   }
   .img_size {
     width: 80%;
@@ -155,7 +155,7 @@ footer .copyright {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .navbar {
-    height: 8%;
+    height: 10%;
   }
   .container {
     max-width: 720px;

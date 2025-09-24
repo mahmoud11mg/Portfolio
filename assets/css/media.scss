@@ -103,8 +103,9 @@ footer {
   .me {
     margin: 0;
     padding: 0;
-    margin-top: -350px !important;  
+    margin-top: -350px !important;
     margin-left: -15px !important;
+
     .about {
       position: relative !important;
       left: 5px !important;
@@ -128,24 +129,26 @@ footer {
 
     .about {
       width: 80% !important;
-        .about {
-     
 
-      h1 {
-        font-size: 40px !important;
-      }
-      p {
-        font-size: 16px;
-      }
-    }
+      .about {
 
-     
+
+        h1 {
+          font-size: 40px !important;
+        }
+
+        p {
+          font-size: 16px;
+        }
+      }
+
+
     }
 
     .my-img {
       width: 40%;
       position: relative;
-      top: 70px;
+      top: 65px;
       right: 0;
       max-width: 280px;
     }
@@ -165,8 +168,9 @@ footer {
 
   .me {
     width: 50%;
+
     .about {
-     
+
 
       h1 {
         font-size: 40px !important;
@@ -176,7 +180,7 @@ footer {
     .my-img {
       width: 50%;
       position: relative;
-      top: 350px;
+      top: 310px;
       right: 550px !important;
       max-width: 280px;
 
@@ -192,7 +196,7 @@ footer {
 
   .me {
     width: 50% !important;
-  
+
     .about {
       width: 150% !important;
       position: relative !important;
@@ -207,7 +211,7 @@ footer {
     .my-img {
       width: 50%;
       position: relative;
-      top: 280px;
+      top: 270px;
       right: 280px !important;
       max-width: 280px;
 
@@ -239,7 +243,7 @@ footer {
     .my-img {
       width: 50%;
       position: relative;
-      top: 330px;
+      top: 320px;
       right: 690px;
       max-width: 280px;
 

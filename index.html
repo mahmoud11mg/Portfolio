@@ -55,9 +55,12 @@
           <li class="nav-item">
             <a class="CV nav-link hvr-underline-from-right js-scroll-trigger" data-toggle="modal" data-target="#exampleModal">Hire me</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link"><i class="fa fa-eye"></i><span id="visitor-count"> 0</span></a>
-          </li>
+     <li class="nav-item">
+  <a class="nav-link">
+    <i class="fa fa-eye"></i>
+    <span id="visitor-count">0</span>
+  </a>
+</li>
           <li class="nav-item" style="margin-top: -15px;">
             <div class="one-quarter" id="switch">
               <input type="checkbox" class="checkbox" id="chk">
@@ -418,6 +421,13 @@
                                 height="500">
                         </a>
                     </div>
+                    <!--Chefalarab 15-->
+                    <div class=" col-md-4 col-sm-12  grid-item     ecommerce " data-category="business">
+                        <a data-toggle="modal" data-target="#exampleModal-15">
+                            <img alt="Chefalarab" src="assets/img/Portfolio/Chefalarab.png" width="500"
+                                height="500">
+                        </a>
+                    </div>
 
                 </div>
             </div>
@@ -538,12 +548,7 @@
                                      +20 115 874 121 5</a>
                             </li>
 
-                            <!-- Telegram -->
-                            <li class="socials_hire col-sm-12">
-                                <a class="a_go" target="_blank" href="https://t.me/MahmoudMohamed_AbdElmaged">
-                                    <b><i class="mr-2 fa fa-telegram i_icone" aria-hidden="true"></i>Telegram: </b>
-                                     +20 115 874 121 5</a>
-                            </li>
+                            
                         </ul>
                     </div><!--/modal-body-->
                 </div>
@@ -558,17 +563,18 @@
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header hvr-underline-from-right  js-scroll-trigger">
-                        <h5 class="modal-title  text-center col-xl-11"><a class="CV-modal  
-                        " href="assets/Mahmoud_Mohammed.pdf" download="Mahmoud_Mohammed">Download Resume</a></h5>
-
+                        <h5 class="modal-title  text-center col-xl-11"><a class="CV-modal" 
+                             href="assets/Mahmoud_Mohammed.pdf"   download="Mahmoud_Mohammed.pdf" type="application/pdf">
+                             Download Resume</a></h5>
                         <button type="button" class="close col-xl-1 " data-dismiss="modal" aria-label="close col-xl-1">
                             <span aria-hidden="true">×</span>
                         </button>
                     </div>
                     <div class="modal-body mfp-container popup">
 
-                        <img class="img-modal" src="assets/img/resume/resume.jpg" alt="resume.png">
-                        <img class="img-modal" src="assets/img/resume/resume2.jpg" alt="resume2.png">
+                        <img class="img-modal" src="assets/img/resume/resume.webp" alt="resume.webp">
+                        <img class="img-modal" src="assets/img/resume/resume2.webp" alt="resume2.webp">
+                        <img class="img-modal" src="assets/img/resume/resume3.webp" alt="resume3.webp">
 
                     </div> <!--/modal-body-->
                 </div>
@@ -871,7 +877,32 @@
                 </div>
             </div>
         </div>
+         <!--15 Chefalarab-->
+        <div class="modal fade " id="exampleModal-15" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <a href="https://chefalarab.com/" target="_blank" class="col-xl-11">
 
+                            <h5 class="modal-title text-center  "> Chefalarab <i class="fa fa-link"></i></h5>
+                        </a>
+                        <button type="button" class="close col-xl-1" data-dismiss="modal" aria-label="close col-xl-1">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body mfp-container popup" " >
+                        <a href=" https://chefalarab.com/" target="_blank">
+                        <img class="img-modal" src="assets/img/Portfolio/work/chefalarab/chefalarab1.png" alt="Chefalarab">
+                        <img class="img-modal" src="assets/img/Portfolio/work/chefalarab/chefalarab2.png" alt="Chefalarab">
+                        <img class="img-modal" src="assets/img/Portfolio/work/chefalarab/chefalarab3.png" alt="Chefalarab">
+                        
+                        </a>
+                    </div><!--/modal-body-->
+                </div>
+            </div>
+        </div>
+     
+        
     </div>
 
     <!-- jQuery,js,Bootstrap -->
@@ -909,7 +940,20 @@
         document.getElementById('visitor-count').innerText =visitorCount ;
     </script> -->
 
-        <script>
+        <!-- <script>
+        // Retrieve the current count from localStorage or initialize to 0
+        let visitorCount = localStorage.getItem('visitorCount') || 0;
+
+        // Increment the count for every page visit
+        visitorCount++;
+
+        // Update the visitor count in localStorage
+        localStorage.setItem('visitorCount', visitorCount);
+
+        // Display the updated visitor count in the HTML
+        document.getElementById('visitor-count').innerText = visitorCount;
+    </script> -->
+<script>
         // Retrieve the current count from localStorage or initialize to 0
         let visitorCount = localStorage.getItem('visitorCount') || 0;
 

@@ -213,7 +213,6 @@ label {
 
 button {
   border-radius: 0;
-  text-transform: none;
 }
 button:focus {
   outline: 1px dotted;
@@ -231,6 +230,9 @@ button [type=button]:not(:disabled),
 button [type=reset]:not(:disabled),
 button [type=submit]:not(:disabled) {
   cursor: pointer;
+}
+button {
+  text-transform: none;
 }
 button [role=button] {
   cursor: pointer;
@@ -729,6 +731,12 @@ header .bg {
 }
 .me .about p {
   font-size: 20px;
+}
+.me .about h1 {
+  color: #91ff00 !important;
+}
+.me .about span {
+  color: rgb(144, 253, 1);
 }
 .me .my-img {
   width: 100%;

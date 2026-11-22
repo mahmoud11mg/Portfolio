@@ -38,8 +38,6 @@
   }
 }
 
-
-
 .me {
   text-align: center;
   width: 90%;
@@ -67,11 +65,118 @@
     border-radius: 100%;
     border: 5px solid #fff;
     box-shadow: 0 0 10px $mainshadow;
-
   }
 }
 
+// Portfolio - Equal Height Cards
+.grid-portfolio {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
 
+  .grid-item {
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 30px;
+  }
+
+  .portfolio-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 650px;
+    overflow: hidden;
+  }
+
+
+.grid-portfolio {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+
+    // المسافات بين الكروت
+    row-gap: 30px;
+  }
+
+  .grid-item {
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+
+// Large Desktop
+@media (min-width: 1200px) {
+  .grid-portfolio {
+    .row {
+      row-gap: 35px;
+    }
+
+    .grid-item {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+}
+
+  .portfolio-image {
+    display: block;
+    flex: 0 0 250px;
+    height: 250px;
+    overflow: hidden;
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .portfolio-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 0;
+    width: 100%;
+    padding: 20px;
+    overflow: hidden;
+  }
+
+  .portfolio-meta,
+  .portfolio-title,
+  .portfolio-subtitle {
+    flex-shrink: 0;
+  }
+
+  .portfolio-description {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    overflow: hidden;
+    min-height: 4.5em;
+    flex-shrink: 0;
+  }
+
+  .portfolio-technologies {
+    margin-top: auto;
+    padding-top: 15px;
+    overflow: hidden;
+  }
+
+  .technology-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    max-height: 105px;
+    overflow: hidden;
+  }
+}
 
 footer {
   display: flex;
@@ -94,10 +199,10 @@ footer {
   }
 }
 
-// Media Queries
+// Small Screens - Mobile
 @media (max-width: 767px) {
   header {
-    padding: 50px 0; // Reduce padding for mobile
+    padding: 50px 0;
   }
 
   .me {
@@ -131,8 +236,6 @@ footer {
       width: 80% !important;
 
       .about {
-
-
         h1 {
           font-size: 40px !important;
         }
@@ -141,8 +244,6 @@ footer {
           font-size: 16px;
         }
       }
-
-
     }
 
     .my-img {
@@ -154,9 +255,28 @@ footer {
     }
   }
 
+  // Portfolio Mobile
+  .grid-portfolio {
+    .portfolio-card {
+      height: 620px;
+    }
 
+    .portfolio-image {
+      flex-basis: 220px;
+      height: 220px;
+    }
+
+    .portfolio-content {
+      padding: 15px;
+    }
+
+    .technology-list {
+      max-height: 105px;
+    }
+  }
 }
 
+// Tablets
 @media (min-width: 768px) and (max-width: 991px) {
   .navbar {
     height: 10%;
@@ -170,8 +290,6 @@ footer {
     width: 50%;
 
     .about {
-
-
       h1 {
         font-size: 40px !important;
       }
@@ -183,12 +301,27 @@ footer {
       top: 310px;
       right: 550px !important;
       max-width: 280px;
-
     }
   }
 
+  // Portfolio Tablet
+  .grid-portfolio {
+    .portfolio-card {
+      height: 650px;
+    }
+
+    .portfolio-image {
+      flex-basis: 230px;
+      height: 230px;
+    }
+
+    .portfolio-content {
+      padding: 16px;
+    }
+  }
 }
 
+// Small Desktops
 @media (min-width: 992px) and (max-width: 1199px) {
   .container {
     max-width: 960px;
@@ -214,11 +347,18 @@ footer {
       top: 270px;
       right: 280px !important;
       max-width: 280px;
+    }
+  }
 
+  // Portfolio Small Desktop
+  .grid-portfolio {
+    .portfolio-card {
+      height: 650px;
     }
   }
 }
 
+// Large Desktops
 @media (min-width: 1200px) {
   .container {
     max-width: 1140px;
@@ -246,53 +386,58 @@ footer {
       top: 320px;
       right: 690px;
       max-width: 280px;
-
     }
-
   }
 
-  // Print Styles
-  @media print {
-
-    *,
-    *::before,
-    *::after {
-      text-shadow: none;
-      box-shadow: none;
+  // Portfolio Large Desktop
+  .grid-portfolio {
+    .portfolio-card {
+      height: 650px;
     }
+  }
+}
 
-    a:not(.btn) {
-      text-decoration: underline;
-    }
+// Print Styles
+@media print {
 
-    tr,
-    img {
-      page-break-inside: avoid;
-    }
+  *,
+  *::before,
+  *::after {
+    text-shadow: none;
+    box-shadow: none;
+  }
 
-    p,
-    h2,
-    h3 {
-      orphans: 3;
-      widows: 3;
-    }
+  a:not(.btn) {
+    text-decoration: underline;
+  }
 
-    h2,
-    h3 {
-      page-break-after: avoid;
-    }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
 
-    @page {
-      size: a3;
-    }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
 
-    body,
-    .container {
-      min-width: 992px;
-    }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
 
-    .navbar {
-      display: none;
-    }
+  @page {
+    size: a3;
+  }
+
+  body,
+  .container {
+    min-width: 992px;
+  }
+
+  .navbar {
+    display: none;
   }
 }

@@ -1,0 +1,45 @@
+/* Arabic / RTL layout overrides */
+html[dir="rtl"] { direction: rtl; }
+html[dir="rtl"] body { direction: rtl; text-align: right; }
+html[dir="rtl"] .navbar .container,
+html[dir="rtl"] .navbar-nav { direction: rtl; }
+html[dir="rtl"] .navbar-nav { padding-right: 0; }
+html[dir="rtl"] .navbar-toggler { right: auto; left: 15px; }
+html[dir="rtl"] .navbar-collapse { text-align: right; }
+html[dir="rtl"] .me,
+html[dir="rtl"] .experience-header,
+html[dir="rtl"] .modal-header { direction: rtl; }
+html[dir="rtl"] .me .about { left: auto; right: 150px; text-align: right; }
+html[dir="rtl"] .me .my-img { right: auto; left: 415px; }
+html[dir="rtl"] .experience-list { padding-right: 1.25rem; padding-left: 0; }
+html[dir="rtl"] .experience-date { direction: ltr; unicode-bidi: isolate; }
+html[dir="rtl"] .experience-technologies,
+html[dir="rtl"] .technology-list { direction: rtl; }
+html[dir="rtl"] .text-left { text-align: right !important; }
+html[dir="rtl"] .text-right { text-align: left !important; }
+html[dir="rtl"] footer .socials { margin-right: 0; margin-left: 50px; padding-right: 0; }
+html[dir="rtl"] footer .socials .i_icone { margin-right: 0; margin-left: 25px; }
+html[dir="rtl"] .modal-header .close { margin: -1rem auto -1rem -1rem; }
+html[dir="rtl"] .language-nav-item { direction: ltr; }
+html[dir="rtl"] .fa,
+html[dir="rtl"] .bi { direction: ltr; }
+html[dir="rtl"] p,
+html[dir="rtl"] li { line-height: 1.9; }
+@media (max-width: 991.98px) {
+  html[dir="rtl"] .me .about { left: auto; right: 0; }
+  html[dir="rtl"] .me .my-img { right: auto; left: 0; }
+}
+/* Prevent modal container from affecting page height */
+.Modal {
+    position: fixed;
+    inset: 0;
+    width: 0;
+    height: 0;
+    overflow: visible;
+    pointer-events: none;
+    z-index: 1050;
+}
+
+.Modal .modal {
+    pointer-events: auto;
+}

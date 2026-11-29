@@ -566,10 +566,11 @@ body {
 
 .technology-label {
   display: block;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 1px;
+  font-size: 17px;
+  font-weight: bold;
+   letter-spacing: 1px;
   margin-bottom: 12px;
+
 }
 
 .technology-list {
@@ -579,12 +580,17 @@ body {
 }
 
 .technology-list span {
-  font-size: 11px;
-  font-weight: 600;
+  font-size: 13px;
+  font-weight: bolder;
   padding: 7px 11px;
   border-radius: 7px;
   color: var(--bs-primary);
   background: rgba(var(--bs-primary-rgb), 0.09);
+  transition: transform 0.8s ease;
+      &:hover {
+        transform: scale(1.08);
+        
+      }
 }
 
 @media (max-width: 576px) {
@@ -1365,4 +1371,3 @@ body {
     transition: none !important;
   }
 }/*# sourceMappingURL=staylemahmoud.css.map */
-//footer

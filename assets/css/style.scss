@@ -6,25 +6,49 @@
   box-sizing: border-box;
 }
 
-html,
-body {
-  overflow-x: hidden;
+html[lang="ar"] {
+  footer {
+    direction: rtl;
+    width: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden;
+  }
+
+  footer .copyright {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
 }
 html {
   font-family: sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
+  overflow-x: hidden;
 }
 
 body {
-  margin: 0;
-  /* Removes default body margin */
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  overflow-x: clip !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  
 
-  height: 100vh;
-  /* Full viewport height */
-  overflow: auto;
-  /* Ensures the content does not disappear */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: $mainbackground !important;
+  text-align: left;
+  background-color: #eaeaea;
+
+  overflow-x: hidden !important;
 }
 
 article,
@@ -32,22 +56,6 @@ footer,
 header,
 section {
   display: block;
-}
-
-body {
-  width: auto;
-  height: auto;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: $mainbackground !important;
-  text-align: left;
-  background-color: #eaeaea;
-  overflow-x: hidden !important;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -756,22 +764,28 @@ header {
   }
 }
 
+
+
 footer {
   background: $mainbackground !important;
-  // padding: 40px 0;
   color: $mainColor !important;
   border: none;
   height: 145px;
+  width: 100%;
+  display: block;
+  position: relative;
+  bottom: 0;
+  margin: 0 !important;
+  border: 0 !important;
+  padding: 0;
 
   .socials {
-    margin: 0;
+    margin: 0 50px 0 0;
     padding: 0;
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    color: $mainColor !important;
-    margin-right: 50px;
 
     .i_icone {
       color: #fff;
@@ -786,9 +800,15 @@ footer {
 
   .left {
     position: relative;
-    bottom: 0px;
+    bottom: 0;
+  }
+
+  .copyright {
+    margin-bottom: 0;
   }
 }
+
+// Remove unwanted page spacing
 
 // .hire {
 //   width: 11%;

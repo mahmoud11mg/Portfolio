@@ -55,9 +55,16 @@ footer .socials .i_icone:hover {
   box-sizing: border-box;
 }
 
-html,
-body {
-  overflow-x: hidden;
+html[lang=ar] footer {
+  direction: rtl;
+  width: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden;
+}
+html[lang=ar] footer .copyright {
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 html {
@@ -65,28 +72,16 @@ html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
+  overflow-x: hidden;
 }
 
 body {
-  margin: 0;
-  /* Removes default body margin */
-  height: 100vh;
-  /* Full viewport height */
-  overflow: auto;
-  /* Ensures the content does not disappear */
-}
-
-article,
-footer,
-header,
-section {
-  display: block;
-}
-
-body {
-  width: auto;
+  width: 100%;
+  min-height: 100vh;
   height: auto;
-  margin: 0;
+  overflow-x: clip !important;
+  margin: 0 !important;
+  padding: 0 !important;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   font-weight: 400;
@@ -95,6 +90,13 @@ body {
   text-align: left;
   background-color: #eaeaea;
   overflow-x: hidden !important;
+}
+
+article,
+footer,
+header,
+section {
+  display: block;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -756,16 +758,21 @@ footer {
   color: #90f111 !important;
   border: none;
   height: 145px;
+  width: 100%;
+  display: block;
+  position: relative;
+  bottom: 0;
+  margin: 0 !important;
+  border: 0 !important;
+  padding: 0;
 }
 footer .socials {
-  margin: 0;
+  margin: 0 50px 0 0;
   padding: 0;
   list-style: none;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  color: #90f111 !important;
-  margin-right: 50px;
 }
 footer .socials .i_icone {
   color: #fff;
@@ -774,7 +781,10 @@ footer .socials .i_icone {
 }
 footer .left {
   position: relative;
-  bottom: 0px;
+  bottom: 0;
+}
+footer .copyright {
+  margin-bottom: 0;
 }
 
 .grid {
